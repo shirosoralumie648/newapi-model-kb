@@ -36,6 +36,16 @@ https://cdn.jsdelivr.net/gh/shirosoralumie648/newapi-model-kb@main/models.json
 - `blurb`：一句话点评，`zh`/`en` 双语，其余语言回退 `en`
 - `open_weights`：是否开源权重
 
+## 六维能力评分（radar）
+
+`capabilities` 存 AA 的六个**职业能力指数**（免费档即可拉取）：财务会计 / 战略运营 / 法律 / 医疗健康 / 工程 / 经济。
+
+- 取值为 AA 原始值（当前量级约 0~30，随版本演进，**前端不要写死上限**）
+- AA 约定：模型缺任一依赖评估时该维为 `null`（未测 ≠ 零分）
+- 前端雷达图建议按数据集内各维最大值**相对归一化**；任一维缺失的模型不画雷达，显示「数据不全」
+- 这六个指数与智力指数**分开版本化**，各条目用 `capabilities.as_of` 记录快照月份
+- 同批新增：`quality.aa_coding_index` / `aa_agentic_index`（编码分、Agent 分）、`speed.median_ttft_seconds`（首字延迟）、`price` 的缓存命中/写入与每百万 token 参考价
+
 ## 维护流程
 
 1. **半自动草稿**：`scripts/fetch-aa-draft.py` 用你自己的 AA API key（免费档 100 次/天足够）拉取最新榜单，生成候选条目草稿。
