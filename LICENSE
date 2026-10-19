@@ -1,0 +1,23 @@
+newapi-model-kb 数据许可
+========================
+
+本仓库中由维护者整理的数据（档位划分、别名映射、点评文案、文件结构与代码）以
+Creative Commons Attribution 4.0 International（CC BY 4.0）许可发布：
+
+    https://creativecommons.org/licenses/by/4.0/
+
+你可以自由使用、修改和再分发，但必须保留来源署名。
+
+来源署名要求
+------------
+
+其中质量分、速度与任务成本字段整理自 Artificial Analysis（https://artificialanalysis.ai）
+的公开数据。使用或展示这些字段时，必须以可见方式标注来源，例如页面页脚：
+
+    模型数据参考 Artificial Analysis（artificialanalysis.ai）
+
+各条目的 sources 字段保留原始出处链接。使用行为同时受 Artificial Analysis
+服务条款约束：https://artificialanalysis.ai/docs/legal/Terms-of-Use.pdf
+
+如 Artificial Analysis 条款变化导致不能继续镜像其分数，本仓库将把相应字段
+降级为「链接引用 + 自整理档位」，署名要求随之解除。

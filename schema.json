@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/shirosoralumie648/newapi-model-kb/schema.json",
+  "title": "newapi-model-kb models.json",
+  "type": "object",
+  "required": ["schema_version", "updated", "models"],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "updated": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "aa_intelligence_index_version": { "type": "string" },
+    "source_note": {
+      "type": "object",
+      "properties": {
+        "zh": { "type": "string" },
+        "en": { "type": "string" }
+      }
+    },
+    "models": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/model" }
+    }
+  },
+  "$defs": {
+    "tier": { "enum": ["S", "A", "B", "C"] },
+    "speedTier": { "enum": ["fast", "normal", "slow"] },
+    "priceTier": { "enum": ["budget", "mid", "premium"] },
+    "tag": {
+      "enum": [
+        "coding", "agent", "writing", "reasoning", "vision", "audio",
+        "realtime", "chinese", "multilingual", "long-context",
+        "cheap", "fast", "open-weights"
+      ]
+    },
+    "modality": { "enum": ["text", "image", "audio", "video"] },
+    "variant": {
+      "type": "object",
+      "required": ["effort", "index"],
+      "properties": {
+        "effort": { "enum": ["max", "xhigh", "high", "medium", "low", "none"] },
+        "index": { "type": "number" },
+        "note": { "type": "string" }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "required": ["tier", "aa_intelligence_index", "as_of"],
+      "properties": {
+        "tier": { "$ref": "#/$defs/tier" },
+        "aa_intelligence_index": { "type": "number" },
+        "as_of": { "type": "string", "pattern": "^\\d{4}-\\d{2}$" },
+        "variants": { "type": "array", "items": { "$ref": "#/$defs/variant" } }
+      }
+    },
+    "speed": {
+      "type": "object",
+      "required": ["tier", "as_of"],
+      "properties": {
+        "tier": { "$ref": "#/$defs/speedTier" },
+        "median_tokens_per_s": { "type": "number" },
+        "as_of": { "type": "string", "pattern": "^\\d{4}-\\d{2}$" }
+      }
+    },
+    "price": {
+      "type": "object",
+      "required": ["tier", "as_of"],
+      "properties": {
+        "tier": { "$ref": "#/$defs/priceTier" },
+        "aa_cost_per_task_usd": { "type": "number" },
+        "as_of": { "type": "string", "pattern": "^\\d{4}-\\d{2}$" }
+      }
+    },
+    "modalities": {
+      "type": "object",
+      "properties": {
+        "in": { "type": "array", "items": { "$ref": "#/$defs/modality" } },
+        "out": { "type": "array", "items": { "$ref": "#/$defs/modality" } }
+      }
+    },
+    "blurb": {
+      "type": "object",
+      "required": ["zh", "en"],
+      "properties": {
+        "zh": { "type": "string", "maxLength": 120 },
+        "en": { "type": "string", "maxLength": 160 }
+      }
+    },
+    "model": {
+      "type": "object",
+      "required": ["id", "name", "creator", "kind", "context_tokens", "quality", "blurb", "aliases", "sources"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "name": { "type": "string", "maxLength": 80 },
+        "creator": { "type": "string", "maxLength": 60 },
+        "kind": { "enum": ["llm", "image", "video", "audio", "embedding", "rerank"] },
+        "context_tokens": { "type": "integer", "minimum": 0 },
+        "modalities": { "$ref": "#/$defs/modalities" },
+        "quality": { "$ref": "#/$defs/quality" },
+        "speed": { "$ref": "#/$defs/speed" },
+        "price": { "$ref": "#/$defs/price" },
+        "strengths": { "type": "array", "items": { "$ref": "#/$defs/tag" }, "maxItems": 6 },
+        "blurb": { "$ref": "#/$defs/blurb" },
+        "aliases": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "open_weights": { "type": "boolean" },
+        "sources": { "type": "array", "items": { "type": "string", "format": "uri" }, "minItems": 1 }
+      }
+    }
+  }
+}

@@ -1,0 +1,1099 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-19",
+  "aa_intelligence_index_version": "v4.3.2",
+  "source_note": {
+    "zh": "质量分（AA Intelligence Index）、速度、任务成本参考 Artificial Analysis（artificialanalysis.ai）2026-10 公开数据，经人工整理为档位与别名映射。具体价格一律以使用站点自身定价为准，本文件价格字段仅供参考。",
+    "en": "Quality (AA Intelligence Index), speed and cost-per-task reference Artificial Analysis (artificialanalysis.ai) Oct 2026 public data, manually curated into tiers and alias mappings. Actual prices are always set by the site's own pricing; price fields here are indicative only."
+  },
+  "models": [
+    {
+      "id": "claude-opus-5-5",
+      "name": "Claude Opus 5.5",
+      "creator": "Anthropic",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "modalities": { "in": ["text", "image"], "out": ["text"] },
+      "quality": {
+        "tier": "S",
+        "aa_intelligence_index": 58,
+        "as_of": "2026-10",
+        "variants": [
+          { "effort": "max", "index": 58 },
+          { "effort": "xhigh", "index": 56 },
+          { "effort": "high", "index": 54 },
+          { "effort": "medium", "index": 51 },
+          { "effort": "low", "index": 42 }
+        ]
+      },
+      "speed": { "tier": "normal", "median_tokens_per_s": 98, "as_of": "2026-10" },
+      "price": { "tier": "premium", "aa_cost_per_task_usd": 5.98, "as_of": "2026-10" },
+      "strengths": ["agent", "coding", "writing", "long-context", "reasoning"],
+      "blurb": {
+        "zh": "当前智力天花板（AA 指数 58），复杂 agent 任务与长链路工作首选；max 档价格高，低 effort 档位性价比会好很多。",
+        "en": "Current intelligence ceiling (AA index 58); first pick for complex agents and long tasks. Max effort is pricey — lower efforts are far better value."
+      },
+      "aliases": ["claude-opus-5.5", "claude-opus-5.5-max", "claude-opus-5-5-max", "anthropic/claude-opus-5.5"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/claude-opus-5-5"]
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "name": "Claude Sonnet 5.5",
+      "creator": "Anthropic",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "modalities": { "in": ["text", "image"], "out": ["text"] },
+      "quality": {
+        "tier": "S",
+        "aa_intelligence_index": 56,
+        "as_of": "2026-10",
+        "variants": [
+          { "effort": "max", "index": 56 },
+          { "effort": "xhigh", "index": 52 },
+          { "effort": "high", "index": 47 },
+          { "effort": "medium", "index": 41 },
+          { "effort": "low", "index": 36 }
+        ]
+      },
+      "speed": { "tier": "normal", "median_tokens_per_s": 136, "as_of": "2026-10" },
+      "price": { "tier": "premium", "aa_cost_per_task_usd": 5.46, "as_of": "2026-10" },
+      "strengths": ["coding", "agent", "writing", "long-context"],
+      "blurb": {
+        "zh": "Claude 均衡主力：智力仅次于 Opus 5.5，速度快一截，max 档外都很划算，多数团队的默认编码/agent 款。",
+        "en": "Balanced Claude workhorse: just behind Opus 5.5 in intelligence, faster, and much cheaper below max effort. Default coding/agent pick for most teams."
+      },
+      "aliases": ["claude-sonnet-5.5", "claude-sonnet-5.5-max", "claude-sonnet-5-5-max", "anthropic/claude-sonnet-5.5"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/claude-sonnet-5-5"]
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "name": "Claude Haiku 5.5",
+      "creator": "Anthropic",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "modalities": { "in": ["text", "image"], "out": ["text"] },
+      "quality": {
+        "tier": "A",
+        "aa_intelligence_index": 43,
+        "as_of": "2026-10",
+        "variants": [
+          { "effort": "max", "index": 43 },
+          { "effort": "xhigh", "index": 41 },
+          { "effort": "high", "index": 38 },
+          { "effort": "medium", "index": 34 },
+          { "effort": "low", "index": 29 }
+        ]
+      },
+      "speed": { "tier": "fast", "median_tokens_per_s": 232, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.21, "as_of": "2026-10" },
+      "strengths": ["fast", "cheap", "vision", "long-context"],
+      "blurb": {
+        "zh": "Claude 轻量款：232 tok/s 高速输出，A 档智力只要 $0.21/任务，高并发与简单任务的高性价比首选。",
+        "en": "Lightweight Claude: 232 tok/s and $0.21/task at A-tier intelligence. Great value for high-volume, simpler tasks."
+      },
+      "aliases": ["claude-haiku-5.5", "claude-haiku-5.5-max", "anthropic/claude-haiku-5.5"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/claude-haiku-5-5"]
+    },
+    {
+      "id": "claude-fable-5-1",
+      "name": "Claude Fable 5.1",
+      "creator": "Anthropic",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "quality": {
+        "tier": "S",
+        "aa_intelligence_index": 53,
+        "as_of": "2026-10",
+        "variants": [
+          { "effort": "max", "index": 53 },
+          { "effort": "xhigh", "index": 53 },
+          { "effort": "high", "index": 51 },
+          { "effort": "medium", "index": 49 },
+          { "effort": "low", "index": 47 }
+        ]
+      },
+      "speed": { "tier": "slow", "median_tokens_per_s": 68, "as_of": "2026-10" },
+      "price": { "tier": "premium", "aa_cost_per_task_usd": 7.63, "as_of": "2026-10" },
+      "strengths": ["reasoning", "writing", "agent"],
+      "blurb": {
+        "zh": "Anthropic 另一条旗舰线，智力接近 Opus 但更贵、更慢；低 effort 档（47）反而是同系列性价比点，适合深度写作与推敲类任务。",
+        "en": "Anthropic's second flagship line: near-Opus intelligence but pricier and slower; its low-effort tier (47) is the value point. Suits deep writing and deliberation work."
+      },
+      "aliases": ["claude-fable-5.1", "claude-fable-5.1-max", "anthropic/claude-fable-5.1"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/claude-fable-5-1"]
+    },
+    {
+      "id": "gpt-6-astra",
+      "name": "GPT-6 Astra",
+      "creator": "OpenAI",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "modalities": { "in": ["text", "image"], "out": ["text"] },
+      "quality": {
+        "tier": "S",
+        "aa_intelligence_index": 53,
+        "as_of": "2026-10",
+        "variants": [
+          { "effort": "max", "index": 53 },
+          { "effort": "xhigh", "index": 52 },
+          { "effort": "high", "index": 51 },
+          { "effort": "medium", "index": 50 },
+          { "effort": "low", "index": 46 }
+        ]
+      },
+      "speed": { "tier": "normal", "median_tokens_per_s": 69, "as_of": "2026-10" },
+      "price": { "tier": "premium", "aa_cost_per_task_usd": 3.26, "as_of": "2026-10" },
+      "strengths": ["reasoning", "agent", "long-context", "vision"],
+      "blurb": {
+        "zh": "OpenAI GPT-6 旗舰：智力第一梯队，长上下文 1M，多模态输入；effort 各档位都稳，复杂分析类任务用它稳。",
+        "en": "OpenAI's GPT-6 flagship: first-tier intelligence, 1M context, multimodal input. Stable across efforts; a safe pick for hard analytical work."
+      },
+      "aliases": ["gpt-6-astra", "gpt-6-astra-max", "openai/gpt-6-astra"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/gpt-6-astra"]
+    },
+    {
+      "id": "gpt-6-1-sol",
+      "name": "GPT-6.1 Sol",
+      "creator": "OpenAI",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "modalities": { "in": ["text", "image"], "out": ["text"] },
+      "quality": {
+        "tier": "S",
+        "aa_intelligence_index": 52,
+        "as_of": "2026-10",
+        "variants": [
+          { "effort": "max", "index": 52 },
+          { "effort": "xhigh", "index": 51 },
+          { "effort": "high", "index": 50 },
+          { "effort": "medium", "index": 48 },
+          { "effort": "low", "index": 42 }
+        ]
+      },
+      "speed": { "tier": "normal", "median_tokens_per_s": 60, "as_of": "2026-10" },
+      "price": { "tier": "mid", "aa_cost_per_task_usd": 0.72, "as_of": "2026-10" },
+      "strengths": ["coding", "agent", "cheap", "long-context"],
+      "blurb": {
+        "zh": "GPT-6 高性价比主力：S 档智力、价格只有 Astra 的零头（$0.72/任务），日常默认款，低档位 $0.21 更狠。",
+        "en": "GPT-6's value workhorse: S-tier intelligence at a fraction of Astra's price ($0.72/task). The natural daily default; low effort drops to $0.21."
+      },
+      "aliases": ["gpt-6.1-sol", "gpt-6-1-sol", "gpt-6.1-sol-max", "openai/gpt-6.1-sol"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/gpt-6-1-sol"]
+    },
+    {
+      "id": "gpt-6-luna",
+      "name": "GPT-6 Luna",
+      "creator": "OpenAI",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "modalities": { "in": ["text", "image"], "out": ["text"] },
+      "quality": {
+        "tier": "B",
+        "aa_intelligence_index": 38,
+        "as_of": "2026-10",
+        "variants": [
+          { "effort": "max", "index": 38 },
+          { "effort": "xhigh", "index": 35 },
+          { "effort": "high", "index": 33 },
+          { "effort": "medium", "index": 30 },
+          { "effort": "low", "index": 22 }
+        ]
+      },
+      "speed": { "tier": "normal", "median_tokens_per_s": 129, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.07, "as_of": "2026-10" },
+      "strengths": ["cheap", "fast", "long-context", "vision"],
+      "blurb": {
+        "zh": "GPT-6 家族的成本杀手：$0.07/任务、117 tok/s，轻量任务和批量跑数据首选，别指望它做难题。",
+        "en": "The GPT-6 family's cost killer: $0.07/task at 117 tok/s. First pick for bulk and lightweight jobs; not for hard reasoning."
+      },
+      "aliases": ["gpt-6-luna", "gpt-6-luna-max", "openai/gpt-6-luna"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/gpt-6-luna"]
+    },
+    {
+      "id": "gpt-5-6-terra",
+      "name": "GPT-5.6 Terra",
+      "creator": "OpenAI",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "modalities": { "in": ["text", "image"], "out": ["text"] },
+      "quality": {
+        "tier": "A",
+        "aa_intelligence_index": 42,
+        "as_of": "2026-10",
+        "variants": [
+          { "effort": "max", "index": 42 },
+          { "effort": "xhigh", "index": 38 },
+          { "effort": "high", "index": 34 },
+          { "effort": "medium", "index": 30 },
+          { "effort": "low", "index": 27 }
+        ]
+      },
+      "speed": { "tier": "normal", "median_tokens_per_s": 148, "as_of": "2026-10" },
+      "price": { "tier": "mid", "aa_cost_per_task_usd": 1.4, "as_of": "2026-10" },
+      "strengths": ["cheap", "coding", "long-context"],
+      "blurb": {
+        "zh": "上一代 GPT-5.6 Terra：智力 A 档但价格已降一截，max 档 148 tok/s 也不慢，过渡期或预算敏感场景仍在役。",
+        "en": "Previous-gen GPT-5.6 Terra: A-tier at a reduced price and 148 tok/s at max. Still a solid pick for budget-sensitive workloads."
+      },
+      "aliases": ["gpt-5.6-terra", "gpt-5-6-terra", "gpt-5.6-terra-max", "openai/gpt-5.6-terra"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/gpt-5-6-terra"]
+    },
+    {
+      "id": "gpt-5-5-instant",
+      "name": "GPT-5.5 Instant (June 2026)",
+      "creator": "OpenAI",
+      "kind": "llm",
+      "context_tokens": 400000,
+      "quality": { "tier": "C", "aa_intelligence_index": 26, "as_of": "2026-06" },
+      "speed": { "tier": "fast", "median_tokens_per_s": 153, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.69, "as_of": "2026-10" },
+      "strengths": ["fast"],
+      "blurb": {
+        "zh": "老款即时响应模型，快但智力弱，只适合当轻量兜底；新任务建议直接用 GPT-6 Luna。",
+        "en": "Legacy instant model: fast but weak. Fine as a light fallback; prefer GPT-6 Luna for new work."
+      },
+      "aliases": ["gpt-5.5-instant", "gpt-5-5-instant"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/gpt-5-5-instant-06-26"]
+    },
+    {
+      "id": "gpt-5-3-codex",
+      "name": "GPT-5.3 Codex",
+      "creator": "OpenAI",
+      "kind": "llm",
+      "context_tokens": 400000,
+      "quality": { "tier": "B", "aa_intelligence_index": 33, "as_of": "2026-10" },
+      "speed": { "tier": "normal", "median_tokens_per_s": 124, "as_of": "2026-10" },
+      "strengths": ["coding", "agent"],
+      "blurb": {
+        "zh": "Codex 编码特化线：终端/agent 编码任务表现稳定，仍被大量编码工具默认使用。",
+        "en": "Codex coding-specialist line: reliable for terminal/agentic coding; still a default in many coding tools."
+      },
+      "aliases": ["gpt-5.3-codex", "gpt-5-3-codex", "gpt-5.3-codex-xhigh", "openai/gpt-5.3-codex"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/gpt-5-3-codex"]
+    },
+    {
+      "id": "gpt-oss-120b",
+      "name": "gpt-oss-120b",
+      "creator": "OpenAI",
+      "kind": "llm",
+      "context_tokens": 131000,
+      "quality": { "tier": "C", "aa_intelligence_index": 12, "as_of": "2026-10" },
+      "speed": { "tier": "fast", "median_tokens_per_s": 263, "as_of": "2026-10" },
+      "strengths": ["open-weights", "cheap", "fast"],
+      "blurb": {
+        "zh": "OpenAI 开源权重 120B：可自托管、免费跑，智力属轻量级，胜在数据不出门。",
+        "en": "Open-weights 120B from OpenAI: self-hostable and free to run. Light intelligence, but data stays in-house."
+      },
+      "aliases": ["gpt-oss-120b", "openai/gpt-oss-120b"],
+      "open_weights": true,
+      "sources": ["https://artificialanalysis.ai/models/gpt-oss-120b"]
+    },
+    {
+      "id": "gpt-oss-20b",
+      "name": "gpt-oss-20b",
+      "creator": "OpenAI",
+      "kind": "llm",
+      "context_tokens": 131000,
+      "quality": { "tier": "C", "aa_intelligence_index": 9, "as_of": "2026-10" },
+      "speed": { "tier": "fast", "median_tokens_per_s": 253, "as_of": "2026-10" },
+      "strengths": ["open-weights", "cheap", "fast"],
+      "blurb": {
+        "zh": "开源 20B 小模型，本地/边缘设备用，智力有限，适合路由兜底或分类打标。",
+        "en": "Open 20B for local/edge use; limited intelligence — good for classification or as a routing fallback."
+      },
+      "aliases": ["gpt-oss-20b", "openai/gpt-oss-20b"],
+      "open_weights": true,
+      "sources": ["https://artificialanalysis.ai/models/gpt-oss-20b"]
+    },
+    {
+      "id": "gemini-4-argon",
+      "name": "Gemini 4 Argon",
+      "creator": "Google",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "modalities": { "in": ["text", "image", "audio"], "out": ["text"] },
+      "quality": {
+        "tier": "S",
+        "aa_intelligence_index": 53,
+        "as_of": "2026-10",
+        "variants": [{ "effort": "high", "index": 53 }]
+      },
+      "strengths": ["vision", "long-context", "reasoning", "agent", "realtime"],
+      "blurb": {
+        "zh": "Google 新旗舰（Argon）：智力重回第一梯队，多模态输入（文/图/音）与 1M 上下文是强项，生态内工具链最全。",
+        "en": "Google's new flagship (Argon): back in the first tier, with multimodal input (text/image/audio) and 1M context. Richest ecosystem."
+      },
+      "aliases": ["gemini-4-argon", "gemini-4-argon-high", "google/gemini-4-argon"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/gemini-4-argon"]
+    },
+    {
+      "id": "gemini-3-8-flash",
+      "name": "Gemini 3.8 Flash",
+      "creator": "Google",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "modalities": { "in": ["text", "image", "audio"], "out": ["text"] },
+      "quality": {
+        "tier": "A",
+        "aa_intelligence_index": 41,
+        "as_of": "2026-10",
+        "variants": [
+          { "effort": "high", "index": 41 },
+          { "effort": "medium", "index": 40 },
+          { "effort": "low", "index": 33 }
+        ]
+      },
+      "speed": { "tier": "fast", "median_tokens_per_s": 158, "as_of": "2026-10" },
+      "price": { "tier": "mid", "aa_cost_per_task_usd": 1.24, "as_of": "2026-10" },
+      "strengths": ["fast", "vision", "cheap", "long-context"],
+      "blurb": {
+        "zh": "Google 中端 Flash：158 tok/s 带视觉和音频输入，$1.24/任务，速度智力价格三角均衡的日常款。",
+        "en": "Google's mid-range Flash: 158 tok/s with vision and audio input at $1.24/task. A balanced everyday pick."
+      },
+      "aliases": ["gemini-3.8-flash", "gemini-3-8-flash", "google/gemini-3.8-flash"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/gemini-3-8-flash"]
+    },
+    {
+      "id": "gemini-3-5-flash-lite",
+      "name": "Gemini 3.5 Flash-Lite",
+      "creator": "Google",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "quality": { "tier": "C", "aa_intelligence_index": 22, "as_of": "2026-10" },
+      "speed": { "tier": "fast", "median_tokens_per_s": 447, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.19, "as_of": "2026-10" },
+      "strengths": ["fast", "cheap", "long-context"],
+      "blurb": {
+        "zh": "447 tok/s 的极致速度 + $0.19/任务，海量轻量请求（打标/摘要/路由）首选。",
+        "en": "Extreme speed (447 tok/s) at $0.19/task — the pick for high-volume lightweight calls (tagging, summaries, routing)."
+      },
+      "aliases": ["gemini-3.5-flash-lite", "gemini-3-5-flash-lite", "google/gemini-3.5-flash-lite"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/gemini-3-5-flash-lite"]
+    },
+    {
+      "id": "gemini-3-1-pro-preview",
+      "name": "Gemini 3.1 Pro Preview",
+      "creator": "Google",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "quality": { "tier": "B", "aa_intelligence_index": 30, "as_of": "2026-10" },
+      "speed": { "tier": "fast", "median_tokens_per_s": 146, "as_of": "2026-10" },
+      "price": { "tier": "mid", "aa_cost_per_task_usd": 1.3, "as_of": "2026-10" },
+      "strengths": ["vision", "long-context"],
+      "blurb": {
+        "zh": "上一代 Gemini Pro 预览，多数场景已被 3.8/4 Argon 取代，除非价格特别便宜否则不必新上。",
+        "en": "Previous-gen Pro preview, mostly superseded by 3.8/4 Argon; skip unless notably cheaper."
+      },
+      "aliases": ["gemini-3.1-pro-preview", "gemini-3-1-pro-preview", "google/gemini-3.1-pro"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/gemini-3-1-pro-preview"]
+    },
+    {
+      "id": "gemma-4-31b",
+      "name": "Gemma 4 31B",
+      "creator": "Google",
+      "kind": "llm",
+      "context_tokens": 256000,
+      "quality": { "tier": "C", "aa_intelligence_index": 15, "as_of": "2026-10" },
+      "speed": { "tier": "slow", "median_tokens_per_s": 36, "as_of": "2026-10" },
+      "strengths": ["open-weights", "cheap"],
+      "blurb": {
+        "zh": "Google 开源 31B：近零成本，轻中端智力，自托管与离线场景的可靠选择。",
+        "en": "Open 31B from Google: near-zero cost, light-mid intelligence; a reliable self-host pick."
+      },
+      "aliases": ["gemma-4-31b", "google/gemma-4-31b"],
+      "open_weights": true,
+      "sources": ["https://artificialanalysis.ai/models/gemma-4-31b"]
+    },
+    {
+      "id": "gemma-4-26b-a4b",
+      "name": "Gemma 4 26B A4B",
+      "creator": "Google",
+      "kind": "llm",
+      "context_tokens": 256000,
+      "quality": { "tier": "C", "aa_intelligence_index": 17, "as_of": "2026-10" },
+      "speed": { "tier": "normal", "median_tokens_per_s": 72, "as_of": "2026-10" },
+      "strengths": ["open-weights", "cheap", "fast"],
+      "blurb": {
+        "zh": "Google 开源 26B MoE，速度快成本低，边缘部署友好。",
+        "en": "Open 26B MoE; fast, cheap, edge-deployment friendly."
+      },
+      "aliases": ["gemma-4-26b-a4b", "google/gemma-4-26b-a4b"],
+      "open_weights": true,
+      "sources": ["https://artificialanalysis.ai/models/gemma-4-26b-a4b"]
+    },
+    {
+      "id": "muse-wonder",
+      "name": "Muse Wonder",
+      "creator": "Meta",
+      "kind": "llm",
+      "context_tokens": 1050000,
+      "quality": {
+        "tier": "S",
+        "aa_intelligence_index": 52,
+        "as_of": "2026-10",
+        "variants": [{ "effort": "max", "index": 52 }]
+      },
+      "speed": { "tier": "normal", "median_tokens_per_s": 176, "as_of": "2026-10" },
+      "price": { "tier": "premium", "aa_cost_per_task_usd": 4.52, "as_of": "2026-10" },
+      "strengths": ["long-context", "agent"],
+      "blurb": {
+        "zh": "Meta 新一代 Muse 主力：S 档智力 + 176 tok/s，1.05M 上下文，第一梯队里速度占优的选择。",
+        "en": "Meta's new Muse mainline: S-tier intelligence at 176 tok/s with 1.05M context — the fast pick among first-tier models."
+      },
+      "aliases": ["muse-wonder", "muse-wonder-max", "meta/muse-wonder"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/muse-wonder"]
+    },
+    {
+      "id": "muse-spark-1-3",
+      "name": "Muse Spark 1.3",
+      "creator": "Meta",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "quality": {
+        "tier": "A",
+        "aa_intelligence_index": 48,
+        "as_of": "2026-10",
+        "variants": [
+          { "effort": "max", "index": 48 },
+          { "effort": "xhigh", "index": 45 }
+        ]
+      },
+      "speed": { "tier": "fast", "median_tokens_per_s": 287, "as_of": "2026-10" },
+      "price": { "tier": "mid", "aa_cost_per_task_usd": 1.6, "as_of": "2026-10" },
+      "strengths": ["fast", "long-context", "cheap"],
+      "blurb": {
+        "zh": "Muse Spark 中杯：A 档智力、$1.60/任务、xhigh 档可跑到 287 tok/s，量大的 agent 流水线很划算。",
+        "en": "Muse Spark mid-tier: A intelligence at $1.60/task; the xhigh variant reaches 287 tok/s — great for high-volume agent pipelines."
+      },
+      "aliases": ["muse-spark-1.3", "muse-spark-1-3", "meta/muse-spark-1.3"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/muse-spark-1-3"]
+    },
+    {
+      "id": "llama-4-maverick",
+      "name": "Llama 4 Maverick",
+      "creator": "Meta",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "quality": { "tier": "C", "aa_intelligence_index": 9, "as_of": "2026-10" },
+      "speed": { "tier": "slow", "median_tokens_per_s": 47, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.04, "as_of": "2026-10" },
+      "strengths": ["open-weights", "cheap", "long-context"],
+      "blurb": {
+        "zh": "Llama 4 开源款：智力已偏弱，胜在生态兼容性最好、极便宜，旧系统兜底用。",
+        "en": "Open Llama 4: dated intelligence but the best ecosystem compatibility and dirt cheap — a good legacy fallback."
+      },
+      "aliases": ["llama-4-maverick", "meta/llama-4-maverick"],
+      "open_weights": true,
+      "sources": ["https://artificialanalysis.ai/models/llama-4-maverick"]
+    },
+    {
+      "id": "llama-4-scout",
+      "name": "Llama 4 Scout",
+      "creator": "Meta",
+      "kind": "llm",
+      "context_tokens": 10000000,
+      "quality": { "tier": "C", "aa_intelligence_index": 6, "as_of": "2026-10" },
+      "speed": { "tier": "fast", "median_tokens_per_s": 123, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.11, "as_of": "2026-10" },
+      "strengths": ["open-weights", "cheap", "long-context"],
+      "blurb": {
+        "zh": "10M 超长上下文的开源特化款，智力弱，只推荐给「文档超长、要求不高」的窄场景。",
+        "en": "Open model with a 10M context; weak intelligence — only for the narrow very-long-doc, low-bar niche."
+      },
+      "aliases": ["llama-4-scout", "meta/llama-4-scout"],
+      "open_weights": true,
+      "sources": ["https://artificialanalysis.ai/models/llama-4-scout"]
+    },
+    {
+      "id": "grok-4-7",
+      "name": "Grok 4.7",
+      "creator": "SpaceXAI",
+      "kind": "llm",
+      "context_tokens": 500000,
+      "quality": {
+        "tier": "A",
+        "aa_intelligence_index": 46,
+        "as_of": "2026-10",
+        "variants": [
+          { "effort": "xhigh", "index": 46 },
+          { "effort": "high", "index": 46 },
+          { "effort": "low", "index": 42 }
+        ]
+      },
+      "speed": { "tier": "normal", "median_tokens_per_s": 92, "as_of": "2026-10" },
+      "price": { "tier": "premium", "aa_cost_per_task_usd": 3.74, "as_of": "2026-10" },
+      "strengths": ["reasoning", "agent"],
+      "blurb": {
+        "zh": "xAI 旗舰：A 档智力、500k 上下文，风格与 OpenAI/Anthropic 差异明显，适合想换口味的团队。",
+        "en": "xAI flagship: A-tier, 500k context, noticeably different style from OpenAI/Anthropic — a good change of flavor."
+      },
+      "aliases": ["grok-4.7", "grok-4-7", "grok-4-7-xhigh", "xai/grok-4.7"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/grok-4-7"]
+    },
+    {
+      "id": "qwen3-8-max",
+      "name": "Qwen3.8 Max (0902)",
+      "creator": "Alibaba",
+      "kind": "llm",
+      "context_tokens": 984000,
+      "quality": { "tier": "A", "aa_intelligence_index": 45, "as_of": "2026-10" },
+      "speed": { "tier": "slow", "median_tokens_per_s": 38, "as_of": "2026-10" },
+      "price": { "tier": "premium", "aa_cost_per_task_usd": 5.41, "as_of": "2026-10" },
+      "strengths": ["chinese", "agent", "long-context"],
+      "blurb": {
+        "zh": "阿里 Qwen3.8 旗舰 Max：A 档智力、中文场景强势，但 38 tok/s 偏慢且不便宜，重中文质量时选它。",
+        "en": "Alibaba's Qwen3.8 Max: A-tier with strong Chinese capability; slow (38 tok/s) and not cheap — pick it when Chinese quality matters most."
+      },
+      "aliases": ["qwen3.8-max", "qwen3-8-max", "qwen3.8-max-0902", "alibaba/qwen3.8-max"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/qwen3-8-max"]
+    },
+    {
+      "id": "qwen3-8-2-4t-a95b",
+      "name": "Qwen3.8 2.4T A95B",
+      "creator": "Alibaba",
+      "kind": "llm",
+      "context_tokens": 262000,
+      "quality": { "tier": "A", "aa_intelligence_index": 40, "as_of": "2026-10" },
+      "speed": { "tier": "slow", "median_tokens_per_s": 38, "as_of": "2026-10" },
+      "price": { "tier": "mid", "aa_cost_per_task_usd": 2.16, "as_of": "2026-10" },
+      "strengths": ["open-weights", "chinese", "agent"],
+      "blurb": {
+        "zh": "Qwen3.8 开源权重版（2.4T 总参/A95B 激活）：自托管阵营的旗舰选择，中文 agent 首选开源款。",
+        "en": "Open-weights Qwen3.8 (2.4T total / A95B active): the self-hosting flagship, top open pick for Chinese agent work."
+      },
+      "aliases": ["qwen3.8-2.4t-a95b", "qwen3-8-2-4t-a95b"],
+      "open_weights": true,
+      "sources": ["https://artificialanalysis.ai/models/qwen3-8-2-4t-a95b"]
+    },
+    {
+      "id": "qwen3-8-flash-next",
+      "name": "Qwen3.8-Flash-Next",
+      "creator": "Alibaba",
+      "kind": "llm",
+      "context_tokens": 256000,
+      "quality": { "tier": "A", "aa_intelligence_index": 40, "as_of": "2026-10" },
+      "speed": { "tier": "normal", "median_tokens_per_s": 52, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.37, "as_of": "2026-10" },
+      "strengths": ["cheap", "chinese", "open-weights"],
+      "blurb": {
+        "zh": "Qwen3.8 Flash 次世代：A 档智力只要 $0.37/任务，中文日常任务性价比极高。",
+        "en": "Qwen3.8 Flash next-gen: A-tier at $0.37/task — outstanding value for everyday Chinese tasks."
+      },
+      "aliases": ["qwen3.8-flash-next", "qwen3-8-flash-next"],
+      "open_weights": true,
+      "sources": ["https://artificialanalysis.ai/models/qwen3-8-flash-next"]
+    },
+    {
+      "id": "qwen3-7-plus",
+      "name": "Qwen3.7 Plus",
+      "creator": "Alibaba",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "quality": { "tier": "C", "aa_intelligence_index": 25, "as_of": "2026-10" },
+      "speed": { "tier": "slow", "median_tokens_per_s": 58, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.22, "as_of": "2026-10" },
+      "strengths": ["cheap", "chinese", "long-context"],
+      "blurb": {
+        "zh": "上一代 Qwen Plus：超便宜 + 1M 上下文，轻量中文任务和长文档摘要够用。",
+        "en": "Previous-gen Qwen Plus: very cheap with 1M context; fine for light Chinese tasks and long-doc summaries."
+      },
+      "aliases": ["qwen3.7-plus", "qwen3-7-plus"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/qwen3-7-plus"]
+    },
+    {
+      "id": "qwen3-5-omni-plus",
+      "name": "Qwen3.5 Omni Plus",
+      "creator": "Alibaba",
+      "kind": "llm",
+      "context_tokens": 256000,
+      "modalities": { "in": ["text", "image", "audio"], "out": ["text"] },
+      "quality": { "tier": "C", "aa_intelligence_index": 20, "as_of": "2026-10" },
+      "speed": { "tier": "fast", "median_tokens_per_s": 98, "as_of": "2026-10" },
+      "strengths": ["chinese", "vision", "cheap"],
+      "blurb": {
+        "zh": "Qwen3.5 全模态 Plus：音频/图像输入，适合中文多模态轻应用；智力有限别指望推理。",
+        "en": "Omni-modal Qwen (audio/image in) for light Chinese multimodal apps; limited reasoning."
+      },
+      "aliases": ["qwen3.5-omni-plus", "qwen3-5-omni-plus"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/qwen3-5-omni-plus"]
+    },
+    {
+      "id": "deepseek-v4-1-flash",
+      "name": "DeepSeek V4.1 Flash 1017",
+      "creator": "DeepSeek",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "quality": {
+        "tier": "A",
+        "aa_intelligence_index": 45,
+        "as_of": "2026-10",
+        "variants": [
+          { "effort": "max", "index": 45 },
+          { "effort": "none", "index": 25, "note": "non-reasoning variant" }
+        ]
+      },
+      "speed": { "tier": "fast", "median_tokens_per_s": 230, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.26, "as_of": "2026-10" },
+      "strengths": ["cheap", "fast", "reasoning", "chinese", "long-context", "open-weights"],
+      "blurb": {
+        "zh": "本批性价比之王：A 档智力（45）+ $0.26/任务 + 230 tok/s，预算敏感又不想降智的默认选择。",
+        "en": "Best value in this batch: A-tier (45) at $0.26/task and 230 tok/s — the default when budget matters but you refuse to lose intelligence."
+      },
+      "aliases": ["deepseek-v4.1-flash", "deepseek-v4-1-flash", "deepseek-v4.1-flash-1017", "deepseek/deepseek-v4.1-flash"],
+      "open_weights": true,
+      "sources": ["https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017"]
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "name": "DeepSeek V4 Pro 0813",
+      "creator": "DeepSeek",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "quality": {
+        "tier": "B",
+        "aa_intelligence_index": 36,
+        "as_of": "2026-08",
+        "variants": [
+          { "effort": "max", "index": 36 },
+          { "effort": "none", "index": 20, "note": "non-reasoning variant" }
+        ]
+      },
+      "speed": { "tier": "fast", "median_tokens_per_s": 110, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.67, "as_of": "2026-10" },
+      "strengths": ["cheap", "reasoning", "chinese", "open-weights"],
+      "blurb": {
+        "zh": "DeepSeek V4 Pro：推理型、价格低，多数场景已被 V4.1 Flash 覆盖，旧部署兜底。",
+        "en": "DeepSeek V4 Pro: reasoning-oriented and cheap; mostly superseded by V4.1 Flash — fine as a legacy fallback."
+      },
+      "aliases": ["deepseek-v4-pro", "deepseek-v4-pro-0813", "deepseek/deepseek-v4-pro"],
+      "open_weights": true,
+      "sources": ["https://artificialanalysis.ai/models/deepseek-v4-pro"]
+    },
+    {
+      "id": "deepseek-v4-flash-vision",
+      "name": "DeepSeek V4 Flash Vision",
+      "creator": "DeepSeek",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "modalities": { "in": ["text", "image"], "out": ["text"] },
+      "quality": { "tier": "B", "aa_intelligence_index": 35, "as_of": "2026-10" },
+      "speed": { "tier": "fast", "median_tokens_per_s": 194, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 1.04, "as_of": "2026-10" },
+      "strengths": ["cheap", "fast", "vision", "chinese"],
+      "blurb": {
+        "zh": "DeepSeek 视觉版 Flash：带图像输入、194 tok/s，便宜的图片理解主力。",
+        "en": "Vision-capable DeepSeek Flash: image input at 194 tok/s — a cheap workhorse for image understanding."
+      },
+      "aliases": ["deepseek-v4-flash-vision", "deepseek/deepseek-v4-flash-vision"],
+      "open_weights": true,
+      "sources": ["https://artificialanalysis.ai/models/deepseek-v4-flash-vision"]
+    },
+    {
+      "id": "glm-5-3",
+      "name": "GLM-5.3",
+      "creator": "Z AI",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "quality": {
+        "tier": "A",
+        "aa_intelligence_index": 45,
+        "as_of": "2026-10",
+        "variants": [{ "effort": "max", "index": 45 }, { "effort": "low", "index": 34 }]
+      },
+      "speed": { "tier": "normal", "median_tokens_per_s": 95, "as_of": "2026-10" },
+      "price": { "tier": "mid", "aa_cost_per_task_usd": 2.01, "as_of": "2026-10" },
+      "strengths": ["chinese", "agent", "coding", "long-context", "open-weights"],
+      "blurb": {
+        "zh": "智谱 GLM-5.3 旗舰：1M 上下文、95 tok/s，中文 agent/编码场景第一梯队，max 档价格中档。",
+        "en": "Zhipu GLM-5.3 flagship: 1M context at 95 tok/s, first-tier for Chinese agent/coding work at mid price."
+      },
+      "aliases": ["glm-5.3", "glm-5-3", "glm-5.3-max", "zai/glm-5.3"],
+      "open_weights": true,
+      "sources": ["https://artificialanalysis.ai/models/glm-5-3"]
+    },
+    {
+      "id": "glm-5-3-flash",
+      "name": "GLM-5.3-Flash",
+      "creator": "Z AI",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "quality": { "tier": "A", "aa_intelligence_index": 42, "as_of": "2026-10" },
+      "speed": { "tier": "normal", "median_tokens_per_s": 78, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.28, "as_of": "2026-10" },
+      "strengths": ["cheap", "chinese", "fast", "long-context", "open-weights"],
+      "blurb": {
+        "zh": "GLM-5.3 Flash：A 档智力只要 $0.28/任务，中文场景白菜价主力，1M 上下文保留。",
+        "en": "GLM-5.3 Flash: A-tier at $0.28/task with 1M context kept — the budget workhorse for Chinese workloads."
+      },
+      "aliases": ["glm-5.3-flash", "glm-5-3-flash", "zai/glm-5.3-flash"],
+      "open_weights": true,
+      "sources": ["https://artificialanalysis.ai/models/glm-5-3-flash"]
+    },
+    {
+      "id": "kimi-k3",
+      "name": "Kimi K3",
+      "creator": "Kimi",
+      "kind": "llm",
+      "context_tokens": 1050000,
+      "quality": {
+        "tier": "A",
+        "aa_intelligence_index": 44,
+        "as_of": "2026-10",
+        "variants": [{ "effort": "max", "index": 44 }, { "effort": "low", "index": 30 }]
+      },
+      "speed": { "tier": "slow", "median_tokens_per_s": 42, "as_of": "2026-10" },
+      "price": { "tier": "mid", "aa_cost_per_task_usd": 2.0, "as_of": "2026-10" },
+      "strengths": ["long-context", "chinese", "writing", "open-weights"],
+      "blurb": {
+        "zh": "月之暗面 Kimi K3：1.05M 超长上下文 + A 档智力，长文档/长对话是招牌；输出 42 tok/s 偏慢，急性子绕行。",
+        "en": "Moonshot Kimi K3: 1.05M context and A-tier intelligence — the long-doc/long-conversation specialist; slow output (42 tok/s)."
+      },
+      "aliases": ["kimi-k3", "kimi-k3-max", "moonshot/kimi-k3"],
+      "open_weights": true,
+      "sources": ["https://artificialanalysis.ai/models/kimi-k3"]
+    },
+    {
+      "id": "kimi-k2-7-code",
+      "name": "Kimi K2.7 Code",
+      "creator": "Kimi",
+      "kind": "llm",
+      "context_tokens": 256000,
+      "quality": { "tier": "C", "aa_intelligence_index": 26, "as_of": "2026-10" },
+      "speed": { "tier": "slow", "median_tokens_per_s": 57, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.54, "as_of": "2026-10" },
+      "strengths": ["coding", "cheap", "open-weights"],
+      "blurb": {
+        "zh": "Kimi 编码专项款：便宜，编码够用，通用任务别用。",
+        "en": "Budget Kimi coding model; fine for code tasks, avoid for general use."
+      },
+      "aliases": ["kimi-k2.7-code", "kimi-k2-7-code", "moonshot/kimi-k2.7-code"],
+      "open_weights": true,
+      "sources": ["https://artificialanalysis.ai/models/kimi-k2-7-code"]
+    },
+    {
+      "id": "mimo-v2-6-pro",
+      "name": "MiMo-V2.6-Pro",
+      "creator": "Xiaomi",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "quality": { "tier": "A", "aa_intelligence_index": 46, "as_of": "2026-10" },
+      "speed": { "tier": "slow", "median_tokens_per_s": 51, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.13, "as_of": "2026-10" },
+      "strengths": ["cheap", "chinese", "long-context"],
+      "blurb": {
+        "zh": "黑马：小米 MiMo V2.6 Pro，A 档智力（46）只要 $0.13/任务，价格表格里最扎眼的性价比，速度偏慢可接受。",
+        "en": "Dark horse: Xiaomi MiMo V2.6 Pro — A-tier (46) at $0.13/task. The most striking value in the table; slowish speed is a fair trade."
+      },
+      "aliases": ["mimo-v2.6-pro", "mimo-v2-6-pro", "xiaomi/mimo-v2.6-pro"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/mimo-v2-6-pro"]
+    },
+    {
+      "id": "mimo-v2-6-flash",
+      "name": "MiMo-V2.6-Flash",
+      "creator": "Xiaomi",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "quality": { "tier": "B", "aa_intelligence_index": 38, "as_of": "2026-10" },
+      "speed": { "tier": "slow", "median_tokens_per_s": 50, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.06, "as_of": "2026-10" },
+      "strengths": ["cheap", "chinese", "long-context"],
+      "blurb": {
+        "zh": "$0.06/任务的 B 档款，轻量中文任务几乎白送，海量调用场景闭眼选。",
+        "en": "B-tier at $0.06/task — nearly free for light Chinese tasks; a no-brainer for bulk calls."
+      },
+      "aliases": ["mimo-v2.6-flash", "mimo-v2-6-flash", "xiaomi/mimo-v2.6-flash"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/mimo-v2-6-flash"]
+    },
+    {
+      "id": "minimax-m3",
+      "name": "MiniMax-M3",
+      "creator": "MiniMax",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "quality": { "tier": "C", "aa_intelligence_index": 29, "as_of": "2026-10" },
+      "speed": { "tier": "fast", "median_tokens_per_s": 122, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.51, "as_of": "2026-10" },
+      "strengths": ["cheap", "fast", "chinese", "long-context"],
+      "blurb": {
+        "zh": "MiniMax M3：便宜、122 tok/s、1M 上下文，通用中端里的稳妥选择。",
+        "en": "MiniMax M3: cheap, 122 tok/s, 1M context — a safe general mid-ranger."
+      },
+      "aliases": ["minimax-m3", "minimax/minimax-m3"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/minimax-m3"]
+    },
+    {
+      "id": "step-5",
+      "name": "Step 5 Preview",
+      "creator": "StepFun",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "quality": { "tier": "A", "aa_intelligence_index": 44, "as_of": "2026-10" },
+      "speed": { "tier": "normal", "median_tokens_per_s": 93, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 1.03, "as_of": "2026-10" },
+      "strengths": ["chinese", "reasoning"],
+      "blurb": {
+        "zh": "阶跃星辰 Step 5 预览：A 档下沿、价格友好，中文生态新势力，预览期留意稳定性。",
+        "en": "StepFun Step 5 preview: lower A-tier at friendly pricing; a rising Chinese-ecosystem player — watch stability during preview."
+      },
+      "aliases": ["step-5", "step-5-preview", "stepfun/step-5"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/step-5"]
+    },
+    {
+      "id": "hy3",
+      "name": "Hy3 (Hunyuan 3)",
+      "creator": "Tencent",
+      "kind": "llm",
+      "context_tokens": 256000,
+      "quality": { "tier": "C", "aa_intelligence_index": 25, "as_of": "2026-10" },
+      "speed": { "tier": "normal", "median_tokens_per_s": 85, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.07, "as_of": "2026-10" },
+      "strengths": ["cheap", "chinese"],
+      "blurb": {
+        "zh": "腾讯混元 3：超便宜，腾讯云生态内集成方便，通用智力一般。",
+        "en": "Tencent Hunyuan 3: ultra-cheap and easy within Tencent Cloud; average general intelligence."
+      },
+      "aliases": ["hy3", "hunyuan-3", "tencent/hy3"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/hy3"]
+    },
+    {
+      "id": "doubao-seed-code",
+      "name": "Doubao Seed Code",
+      "creator": "ByteDance Seed",
+      "kind": "llm",
+      "context_tokens": 256000,
+      "quality": { "tier": "C", "aa_intelligence_index": 17, "as_of": "2026-10" },
+      "strengths": ["coding", "chinese", "cheap"],
+      "blurb": {
+        "zh": "字节豆包 Seed 编码款：编码专项轻量选择，字节生态内顺手。",
+        "en": "ByteDance Doubao Seed Code: a light coding specialist, handy inside the ByteDance ecosystem."
+      },
+      "aliases": ["doubao-seed-code", "bytedance/doubao-seed-code"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/doubao-seed-code"]
+    },
+    {
+      "id": "ernie-5-0-thinking-preview",
+      "name": "ERNIE 5.0 Thinking Preview",
+      "creator": "Baidu",
+      "kind": "llm",
+      "context_tokens": 128000,
+      "quality": { "tier": "C", "aa_intelligence_index": 14, "as_of": "2026-10" },
+      "strengths": ["chinese"],
+      "blurb": {
+        "zh": "百度 ERNIE 5.0 思考预览：早期预览阶段，中文合规场景可关注。",
+        "en": "Baidu ERNIE 5.0 thinking preview: early stage; watch it for China-compliance scenarios."
+      },
+      "aliases": ["ernie-5.0-thinking-preview", "ernie-5.0", "baidu/ernie-5.0"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/ernie-5-0-thinking-preview"]
+    },
+    {
+      "id": "ling-3-1-flash",
+      "name": "Ling 3.1 Flash",
+      "creator": "InclusionAI",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "quality": { "tier": "A", "aa_intelligence_index": 41, "as_of": "2026-10" },
+      "speed": { "tier": "fast", "median_tokens_per_s": 211, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 1.0, "as_of": "2026-10" },
+      "strengths": ["open-weights", "fast", "chinese", "long-context"],
+      "blurb": {
+        "zh": "蚂蚁 Ling 3.1 Flash：A 档下沿 + 211 tok/s + 1M 上下文，开源生态里速度与智力的好平衡。",
+        "en": "InclusionAI Ling 3.1 Flash: lower A-tier at 211 tok/s with 1M context — a nice speed/intelligence balance in the open ecosystem."
+      },
+      "aliases": ["ling-3.1-flash", "ling-3-1-flash", "inclusionai/ling-3.1-flash"],
+      "open_weights": true,
+      "sources": ["https://artificialanalysis.ai/models/ling-3-1-flash"]
+    },
+    {
+      "id": "ring-2-6-1t",
+      "name": "Ring-2.6-1T",
+      "creator": "InclusionAI",
+      "kind": "llm",
+      "context_tokens": 262000,
+      "quality": { "tier": "C", "aa_intelligence_index": 17, "as_of": "2026-10" },
+      "speed": { "tier": "fast", "median_tokens_per_s": 126, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.29, "as_of": "2026-10" },
+      "strengths": ["open-weights", "cheap"],
+      "blurb": {
+        "zh": "蚂蚁 Ring 2.6 1T 开源权重，自托管大杯选择，智力轻量级。",
+        "en": "Open-weights 1T from InclusionAI; a large self-host option with light intelligence."
+      },
+      "aliases": ["ring-2.6-1t", "inclusionai/ring-2.6-1t"],
+      "open_weights": true,
+      "sources": ["https://artificialanalysis.ai/models/ring-2-6-1t"]
+    },
+    {
+      "id": "longcat-2-0",
+      "name": "LongCat 2.0",
+      "creator": "LongCat",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "quality": { "tier": "C", "aa_intelligence_index": 19, "as_of": "2026-10" },
+      "speed": { "tier": "slow", "median_tokens_per_s": 64, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.15, "as_of": "2026-10" },
+      "strengths": ["cheap", "chinese", "long-context", "open-weights"],
+      "blurb": {
+        "zh": "美团 LongCat 2.0：$0.15/任务 + 1M 上下文，白菜价长文本选项。",
+        "en": "Meituan LongCat 2.0: $0.15/task with 1M context — a bargain long-context option."
+      },
+      "aliases": ["longcat-2.0", "longcat-2-0", "meituan/longcat-2.0"],
+      "open_weights": true,
+      "sources": ["https://artificialanalysis.ai/models/longcat-2-0"]
+    },
+    {
+      "id": "k2-horizon-375b-a23b",
+      "name": "K2 Horizon 375B A23B",
+      "creator": "Institute of Foundation Models",
+      "kind": "llm",
+      "context_tokens": 524000,
+      "quality": { "tier": "B", "aa_intelligence_index": 31, "as_of": "2026-10" },
+      "speed": { "tier": "fast", "median_tokens_per_s": 1061, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.0, "as_of": "2026-10" },
+      "strengths": ["fast", "cheap", "open-weights", "long-context"],
+      "blurb": {
+        "zh": "速度怪兽：1061 tok/s + 免费/近零成本 + B 档智力，批量流水线与实时交互的神器。",
+        "en": "Speed monster: 1061 tok/s at ~$0/task with B-tier intelligence — a monster for batch pipelines and realtime interaction."
+      },
+      "aliases": ["k2-horizon", "k2-horizon-375b-a23b", "ifm/k2-horizon"],
+      "open_weights": true,
+      "sources": ["https://artificialanalysis.ai/models/k2-horizon-375b-a23b"]
+    },
+    {
+      "id": "command-a-plus",
+      "name": "Command A+",
+      "creator": "Cohere",
+      "kind": "llm",
+      "context_tokens": 192000,
+      "quality": { "tier": "C", "aa_intelligence_index": 13, "as_of": "2026-10" },
+      "speed": { "tier": "fast", "median_tokens_per_s": 158, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.0, "as_of": "2026-10" },
+      "strengths": ["cheap", "fast", "multilingual"],
+      "blurb": {
+        "zh": "Cohere 企业线：全场延迟最低之一，RAG/检索增强场景传统强项，智力不追求顶尖。",
+        "en": "Cohere's enterprise line: among the lowest latency; traditionally strong for RAG — not chasing top intelligence."
+      },
+      "aliases": ["command-a-plus", "cohere/command-a-plus"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/command-a-plus"]
+    },
+    {
+      "id": "mistral-large-4",
+      "name": "Mistral Large 4 Preview",
+      "creator": "Mistral",
+      "kind": "llm",
+      "context_tokens": 524000,
+      "quality": { "tier": "B", "aa_intelligence_index": 38, "as_of": "2026-10" },
+      "speed": { "tier": "slow", "median_tokens_per_s": 74, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 1.13, "as_of": "2026-10" },
+      "strengths": ["multilingual", "open-weights"],
+      "blurb": {
+        "zh": "欧洲代表 Mistral Large 4 预览：524k 上下文、多语言友好，欧盟合规场景加分。",
+        "en": "Europe's Mistral Large 4 preview: 524k context, multilingual-friendly, plus points for EU compliance."
+      },
+      "aliases": ["mistral-large-4", "mistral-large-4-preview", "mistral/mistral-large-4"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/mistral-large-4"]
+    },
+    {
+      "id": "nova-2-0-pro-preview",
+      "name": "Nova 2.0 Pro Preview",
+      "creator": "Amazon",
+      "kind": "llm",
+      "context_tokens": 256000,
+      "quality": { "tier": "C", "aa_intelligence_index": 14, "as_of": "2026-10" },
+      "speed": { "tier": "normal", "median_tokens_per_s": 130, "as_of": "2026-10" },
+      "strengths": ["chinese"],
+      "blurb": {
+        "zh": "AWS Nova 2.0 Pro 预览：AWS 生态内集成方便，智力一般，企业已有 AWS 合同顺手用。",
+        "en": "AWS Nova 2.0 Pro preview: easy within AWS; average intelligence — handy when you're already committed to AWS."
+      },
+      "aliases": ["nova-2.0-pro-preview", "nova-2-0-pro", "amazon/nova-2.0-pro"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/nova-2-0-pro-reasoning-medium"]
+    },
+    {
+      "id": "solar-pro-4",
+      "name": "Solar Pro 4",
+      "creator": "Upstage",
+      "kind": "llm",
+      "context_tokens": 512000,
+      "quality": { "tier": "C", "aa_intelligence_index": 27, "as_of": "2026-10" },
+      "speed": { "tier": "normal", "median_tokens_per_s": 119, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.71, "as_of": "2026-10" },
+      "strengths": ["multilingual"],
+      "blurb": {
+        "zh": "Upstage Solar Pro 4：韩语生态强项，512k 上下文，中端价格。",
+        "en": "Upstage Solar Pro 4: strong Korean ecosystem support, 512k context, mid pricing."
+      },
+      "aliases": ["solar-pro-4", "solar-pro4", "upstage/solar-pro-4"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/solar-pro4"]
+    },
+    {
+      "id": "mercury-2-5",
+      "name": "Mercury 2.5",
+      "creator": "Inception",
+      "kind": "llm",
+      "context_tokens": 260000,
+      "quality": { "tier": "C", "aa_intelligence_index": 12, "as_of": "2026-10" },
+      "speed": { "tier": "fast", "median_tokens_per_s": 766, "as_of": "2026-10" },
+      "price": { "tier": "budget", "aa_cost_per_task_usd": 0.12, "as_of": "2026-10" },
+      "strengths": ["fast", "cheap"],
+      "blurb": {
+        "zh": "扩散架构 LLM：766 tok/s 的流式体验极佳，智力轻量，适合打字机式交互与草稿生成。",
+        "en": "Diffusion-architecture LLM: 766 tok/s streaming feel, light intelligence — fun for typewriter-style drafting."
+      },
+      "aliases": ["mercury-2.5", "mercury-2-5", "inception/mercury-2.5"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/mercury-2-5"]
+    },
+    {
+      "id": "inkling",
+      "name": "Inkling",
+      "creator": "Thinking Machines",
+      "kind": "llm",
+      "context_tokens": 1000000,
+      "quality": {
+        "tier": "C",
+        "aa_intelligence_index": 25,
+        "as_of": "2026-10",
+        "variants": [{ "effort": "xhigh", "index": 25 }]
+      },
+      "speed": { "tier": "fast", "median_tokens_per_s": 220, "as_of": "2026-10" },
+      "strengths": ["fast", "long-context"],
+      "blurb": {
+        "zh": "Thinking Machines（Mira Murati 团队）新玩家：220 tok/s + 1M 上下文，早期阶段值得观察。",
+        "en": "New player from Thinking Machines (Mira Murati's team): 220 tok/s with 1M context; early days, worth watching."
+      },
+      "aliases": ["inkling", "inkling-xhigh", "thinking-machines/inkling"],
+      "open_weights": false,
+      "sources": ["https://artificialanalysis.ai/models/inkling"]
+    }
+  ]
+}
