@@ -120,7 +120,7 @@
       "strengths": ["reasoning", "writing", "agent"],
       "blurb": {
         "zh": "Anthropic 另一条旗舰线，智力接近 Opus 但更贵、更慢；低 effort 档（47）反而是同系列性价比点，适合深度写作与推敲类任务。",
-        "en": "Anthropic's second flagship line: near-Opus intelligence but pricier and slower; its low-effort tier (47) is the value point. Suits deep writing and deliberation work."
+        "en": "Anthropic's second flagship: near-Opus intelligence but pricier and slower. Its low-effort tier (47) is the value pick for deep writing and deliberation."
       },
       "aliases": ["claude-fable-5.1", "claude-fable-5.1-max", "anthropic/claude-fable-5.1"],
       "open_weights": false,
