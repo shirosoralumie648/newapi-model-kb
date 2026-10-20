@@ -43,7 +43,7 @@
     },
     "quality": {
       "type": "object",
-      "required": ["tier", "aa_intelligence_index", "as_of"],
+      "required": ["tier", "as_of"],
       "properties": {
         "tier": { "$ref": "#/$defs/tier" },
         "aa_intelligence_index": { "type": "number" },
