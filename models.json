@@ -5878,8 +5878,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "MiniMax M3：便宜、103 tok/s、1M 上下文，通用中端里的稳妥选择；难题与复杂 Agent 仍需更强模型。",
-        "en": "MiniMax M3: cheap, 103 tok/s, 1M context—a safe general mid-ranger; hard problems and complex agents need more."
+        "zh": "MiniMax M3：价格中等（$0.51/任务）、103 tok/s、1M 上下文，通用中端里的稳妥选择；难题仍需更强模型。",
+        "en": "MiniMax M3: mid-priced ($0.51/task), 103 tok/s, 1M context—a safe general mid-ranger; hard problems need more."
       },
       "aliases": [
         "minimax-m3",
@@ -6792,7 +6792,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "NVIDIA 开源小钢炮，快且便宜可自部署；智力仅 C 档，只适轻量任务。",
+        "zh": "NVIDIA 开源小钢炮，快且便宜可自部署；智力仅 C 档，只适合轻量任务。",
         "en": "NVIDIA open 9B: fast, cheap, self-hostable. But C-tier smarts—light tasks only."
       },
       "aliases": [
@@ -6919,8 +6919,8 @@
         "vision"
       ],
       "blurb": {
-        "zh": "OpenAI GPT-6 旗舰：智力第一梯队，长上下文 1M，多模态输入；effort 各档位都稳，复杂分析类任务用它稳。",
-        "en": "OpenAI's GPT-6 flagship: first-tier intelligence, 1M context, multimodal input. Stable across efforts; a safe pick for hard analytical work."
+        "zh": "OpenAI GPT-6 旗舰：智力第一梯队、1M 上下文、多模态输入；但首字延迟约 265 秒，只适合离线/批量深度分析。",
+        "en": "OpenAI's GPT-6 flagship: first-tier intelligence, 1M context, multimodal; but ~265s first-token latency—offline/batch analysis only."
       },
       "aliases": [
         "gpt-6-astra",
@@ -15180,8 +15180,8 @@
         "fast"
       ],
       "blurb": {
-        "zh": "Google 开源 26B MoE，速度快成本低，边缘部署友好。",
-        "en": "Open 26B MoE; fast, cheap, edge-deployment friendly."
+        "zh": "Google 开源 26B MoE，256K 上下文、支持图文视频输入，成本低；速度一般、智力 C 档、Agent 弱，仅适合轻量任务。",
+        "en": "Google's open 26B MoE with 256K context and image/video input, cheap; average speed, C-tier, weak agents—light tasks only."
       },
       "aliases": [
         "gemma-4-26b-a4b",
@@ -18483,8 +18483,8 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "DeepSeek V4 Pro：推理型、价格低，多数场景已被 V4.1 Flash 覆盖，旧部署兜底。",
-        "en": "DeepSeek V4 Pro: reasoning-oriented and cheap; mostly superseded by V4.1 Flash — fine as a legacy fallback."
+        "zh": "DeepSeek V4 Pro：B 档推理型，价格中等（$0.67/任务）；多数场景已被更便宜更快的 V4.1 Flash 覆盖，仅作旧部署兜底。",
+        "en": "DeepSeek V4 Pro: B-tier reasoning, mid-priced ($0.67/task); mostly superseded by the cheaper, faster V4.1 Flash—legacy fallback."
       },
       "aliases": [
         "deepseek-v4-pro",
@@ -22842,7 +22842,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "开源24B小模型，32K上下文；智力C档，适合本地轻量任务和微调，解不了难题。",
+        "zh": "开源 24B 小模型，32K 上下文；智力 C 档，适合本地轻量任务和微调，但解不了难题。",
         "en": "Open 24B self-hostable model, 32K context; tier C—good for local light tasks and fine-tuning, not hard problems."
       },
       "aliases": [
@@ -26023,7 +26023,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "GPT-6 Luna：低价轻量款，百万上下文+视觉，智力仅21.5，只适简单图文，不擅长难题。",
+        "zh": "GPT-6 Luna：低价轻量款，百万上下文+视觉，智力仅 21.5，只适合简单图文任务，不擅长难题。",
         "en": "GPT-6 Luna: budget lightweight, 1M context + vision, near-zero cost, 21.5 intelligence—simple tasks only."
       },
       "aliases": [
@@ -26087,8 +26087,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "适合预算有限、需要长上下文和视觉输入的轻量编码用户；别指望它做复杂Agent任务，首字延迟偏高。",
-        "en": "For budget coding with long context and vision; weak agent skills, high first-token latency."
+        "zh": "适合预算有限、需长上下文和视觉输入的编码用户；编码 66.3、Agent 41.2 属中上，但首字约 8 秒偏高，不宜实时任务。",
+        "en": "Budget coding with long context and vision; coding 66.3 and agent 41.2 are solid, though ~8s TTFT is high for real-time use."
       },
       "aliases": [
         "grok-4-6-low",
@@ -31719,7 +31719,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "Qwen3 14B 非推理版：开源可自部署、极廉价、速度尚可，但智力仅 C 档，只适轻聊与简单任务，不擅长难题。",
+        "zh": "Qwen3 14B 非推理版：开源可自部署、极廉价、速度尚可，但智力仅 C 档，只适合轻聊与简单任务，不擅长难题。",
         "en": "Qwen3 14B non-reasoning: open-weights, self-hostable, very cheap, decent speed—but C-tier smarts; light chat only, not hard problems."
       },
       "aliases": [
@@ -31765,7 +31765,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "微软开源小模型，可自部署、极便宜；智力仅5.9且慢，只适轻量任务。",
+        "zh": "微软开源小模型，可自部署、极便宜；智力仅5.9且慢，只适合轻量任务。",
         "en": "Microsoft's open small model: self-deployable, dirt cheap, but 5.9 intelligence and slow—light tasks only."
       },
       "aliases": [
@@ -33350,8 +33350,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "适合需视觉输入和400K长上下文、任务简单的开发者；智力20.4偏轻量，难解复杂问题，胜在便宜快速。",
-        "en": "For devs needing vision and 400K context on simple tasks; intelligence 20.4 is lightweight—not for hard problems, but cheap and fast."
+        "zh": "适合需视觉输入和 400K 长上下文、任务简单的开发者；智力 20.4 偏轻量，价格便宜但首字约 17 秒，不适合交互式编码。",
+        "en": "For devs needing vision and 400K context on simple tasks; 20.4 intelligence, cheap but ~17s first token—not for interactive coding."
       },
       "aliases": [
         "gpt-5-1-codex-mini",
