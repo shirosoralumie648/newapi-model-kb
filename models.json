@@ -516,7 +516,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "适合长上下文、图文输入且可自部署的轻量场景；速度快、价格低，但智力档C，难解难题。",
+        "zh": "适合长上下文、图文输入且可自部署的轻量场景；速度快、价格低，但智力档C，不擅长难题。",
         "en": "Open-weights, 262k context, vision input; fast, cheap, self-hosted lightweight multimodal tasks, not for hard reasoning."
       },
       "aliases": [
@@ -569,7 +569,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "开源多模态12B小模型，超长上下文、价格极低；智力仅C档，适合轻量自部署，难解难题。",
+        "zh": "开源多模态12B小模型，超长上下文、价格极低；智力仅C档，适合轻量自部署，不擅长难题。",
         "en": "Open-weights 12B multimodal, long context, rock-bottom price; C-tier smarts—fine for light self-hosted apps, not hard problems."
       },
       "aliases": [
@@ -802,8 +802,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "Anthropic 中端主力：A 级质量、1M 上下文、六维齐全，适合长文档与多模态办公；闭源，成本中等。",
-        "en": "Anthropic's mid-tier: A-grade, 1M context, six-domain skills, vision—ideal for long-doc/multimodal work; closed-source, moderate cost."
+        "zh": "Anthropic 中端主力：A 级质量、1M 上下文、支持视觉，适合长文档与多模态办公；闭源，成本中等。",
+        "en": "Anthropic's mid-tier: A-grade, 1M context, vision—ideal for long-doc/multimodal work; closed-source, moderate cost."
       },
       "aliases": [
         "claude-sonnet-5-5-medium",
@@ -1129,7 +1129,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "OpenAI低价轻量款：百万上下文+视觉，$0.01/任务、速度快；智力21、Agent弱，宜简单问答与文档，难解难题。",
+        "zh": "OpenAI低价轻量款：百万上下文+视觉，$0.01/任务、速度快；智力21、Agent弱，宜简单问答与文档，不擅长难题。",
         "en": "OpenAI budget lite: 1M context + vision, $0.01/task, fast; intelligence 21, weak agents—good for simple QA/docs, not hard tasks."
       },
       "aliases": [
@@ -1962,8 +1962,8 @@
         "vision"
       ],
       "blurb": {
-        "zh": "老牌中档，编码视觉均衡，200K上下文；不开源价高，难解旗舰题。",
-        "en": "Reliable mid-tier with balanced coding/vision and 200K context; closed-source, pricey, not for frontier tasks."
+        "zh": "老款入门模型，200K 上下文、支持图片输入；智力分 7.9 偏低、编码一般，闭源且价格不低，难胜任复杂任务。",
+        "en": "Legacy entry-level model, 200K context, image input; 7.9 intelligence is low, closed-source and not cheap—avoid complex tasks."
       },
       "aliases": [
         "claude-35-sonnet",
@@ -2723,8 +2723,8 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "IBM开源轻量模型，可自部署、成本极低、六维齐全，适合预算敏感常规业务；智力与Agent弱，难解难题。",
-        "en": "IBM's open-weights, self-deployable budget model: full coverage, cheap for routine tasks; weak reasoning/agents—skip hard problems."
+        "zh": "IBM 开源轻量模型，可自部署、成本极低，适合预算敏感常规业务；智力与 Agent 弱，不擅长难题。",
+        "en": "IBM's open-weights, self-deployable budget model for routine work; weak reasoning and agents—skip hard problems."
       },
       "aliases": [
         "granite-4-2-30b",
@@ -3438,8 +3438,8 @@
         "vision"
       ],
       "blurb": {
-        "zh": "o3 适合需要图文理解的日常问答和轻量任务；速度快但智力档只算中等，别指望它做难题。",
-        "en": "o3 suits everyday Q&A and light tasks with image input; fast but mid-tier intelligence, not for hard problems."
+        "zh": "o3 支持图文输入，但智力仅 C 档（20.2），首字约 6.4 秒，只适合日常问答和轻量任务，别指望难题。",
+        "en": "C-tier intelligence (20.2) and ~6.4s first token—everyday Q&A and light tasks only."
       },
       "aliases": [
         "o3"
@@ -3551,8 +3551,8 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "开源可自部署的轻量推理模型，适合本地简单任务；智力C档，难解不了。",
-        "en": "Open-weights, self-hostable 4B reasoner for simple local tasks; C-tier smarts, no hard problems."
+        "zh": "开源可自部署的轻量推理模型，适合本地简单任务；智力 C 档，解不了难题。",
+        "en": "Open, self-hostable lightweight reasoning model for simple local tasks; C-tier, cannot solve hard problems."
       },
       "aliases": [
         "qwen3-4b-instruct-reasoning",
@@ -3677,7 +3677,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "百万上下文+图文、$0.04/任务，适合长文档多模态；但B档智力、首字25秒，难解难题。",
+        "zh": "百万上下文+图文、$0.04/任务，适合长文档多模态；但B档智力、首字25秒，不擅长难题。",
         "en": "1M context+vision at $0.04/task suits long-doc multimodal; but B-tier smarts and 25s first token limit hard reasoning."
       },
       "aliases": [
@@ -4054,7 +4054,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "开源可自部署70B老模型，智力C档、速度慢；适合自建推理与对话微调，难解难题。",
+        "zh": "开源可自部署70B老模型，智力C档、速度慢；适合自建推理与对话微调，不擅长难题。",
         "en": "Self-hostable open 70B; C-tier smarts, slow—fine for chat fine-tunes, not hard reasoning."
       },
       "aliases": [
@@ -4307,8 +4307,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "OpenAI旗舰：1M上下文、编码75.9、六维齐全；但单任务$2.31、延迟147秒，适合预算充足的复杂编码与长文档。",
-        "en": "OpenAI flagship: 1M context, 75.9 coding, all 6 domains. But $2.31/task, 147s latency—for complex coding/long docs."
+        "zh": "OpenAI 旗舰：1M 上下文、编码 75.9，但单任务 $2.31、延迟 147 秒，适合预算充足的复杂编码与长文档。",
+        "en": "OpenAI flagship: 1M context, 75.9 coding; but $2.31/task and 147s latency—for well-funded complex coding and long docs."
       },
       "aliases": [
         "gpt-6-astra-xhigh",
@@ -4421,7 +4421,7 @@
         "vision"
       ],
       "blurb": {
-        "zh": "适合预算有限、需看图和超长上下文的轻量任务；价低但智力弱，难解难题。",
+        "zh": "适合预算有限、需看图和超长上下文的轻量任务；价低但智力弱，不擅长难题。",
         "en": "Good for budget users needing vision and 200k context on light tasks; cheap but low intelligence, not for hard problems."
       },
       "aliases": [
@@ -4753,7 +4753,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "速度快、百万上下文、支持音视频，适合日常多模态；但智力弱、首字慢，难解难题。",
+        "zh": "速度快、百万上下文、支持音视频，适合日常多模态；但智力弱、首字慢，不擅长难题。",
         "en": "Fast, 1M context, audio/video input—good for daily multimodal; weak reasoning, slow first token, not for hard tasks."
       },
       "aliases": [
@@ -5108,8 +5108,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "适合需百万上下文、图文与编码的开发者；编码尚可，Agent弱、首字慢，不宜复杂自动化。",
-        "en": "For devs needing 1M context, vision, coding; decent code but weak agent, slow first token—skip complex automation."
+        "zh": "适合需百万上下文、图文与编码的开发者；编码尚可、Agent 弱，但首字延迟约 161 秒，交互式使用基本不可行。",
+        "en": "For devs needing 1M context, vision and coding; decent code but weak agent, yet ~161s first-token latency makes chat impractical."
       },
       "aliases": [
         "claude-sonnet-5",
@@ -5366,8 +5366,8 @@
         "vision"
       ],
       "blurb": {
-        "zh": "适合预算有限、可容忍慢速的图文理解；质量C档、首字17秒，不适合难题或实时对话。",
-        "en": "Budget vision+text if slow speed is OK; quality tier C, 17s first token. Not for hard problems or real-time chat."
+        "zh": "图文理解可用、200K 上下文，但 $5/$25 每百万 token 偏贵、首字 17 秒且仅 C 档，不适合预算敏感或实时场景。",
+        "en": "Solid text+image at 200K context, but $5/$25 per 1M tokens is pricey, 17s TTFT, C-tier—not for budget or real-time use."
       },
       "aliases": [
         "claude-opus-4-5-thinking",
@@ -5491,8 +5491,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "适合长上下文、图文理解的企业用户；六维齐全，速度尚可，首字延迟高，价格中档。",
-        "en": "For enterprises needing long context and vision; well-rounded, decent speed, high first-token latency, mid-tier price."
+        "zh": "适合长上下文、图文理解的企业用户；智力 46.8、A 档，速度尚可，首字延迟 11.3 秒，价格中档。",
+        "en": "For enterprises needing long context and vision; A-tier at 46.8, decent speed but 11.3s first token, mid price."
       },
       "aliases": [
         "claude-sonnet-5-5-high",
@@ -5540,7 +5540,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "开源可自部署的长上下文模型，适合预算有限、处理超长文档；智力指数仅9.6，难解难题。",
+        "zh": "开源可自部署的长上下文模型，适合预算有限、处理超长文档；智力指数仅9.6，不擅长难题。",
         "en": "Open-weight, self-deployable long-context model for budget users handling long docs; intelligence index 9.6, not for hard problems."
       },
       "aliases": [
@@ -5878,8 +5878,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "MiniMax M3：便宜、122 tok/s、1M 上下文，通用中端里的稳妥选择。",
-        "en": "MiniMax M3: cheap, 122 tok/s, 1M context — a safe general mid-ranger."
+        "zh": "MiniMax M3：便宜、103 tok/s、1M 上下文，通用中端里的稳妥选择；难题与复杂 Agent 仍需更强模型。",
+        "en": "MiniMax M3: cheap, 103 tok/s, 1M context—a safe general mid-ranger; hard problems and complex agents need more."
       },
       "aliases": [
         "minimax-m3",
@@ -6276,8 +6276,8 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "开源可自部署旧款中端模型，支持图像与长上下文，仅适合零预算基础文本看图，不适合编码Agent。",
-        "en": "Open-weights self-hostable legacy mid-tier model, image input and long context; only for zero-budget basic text/vision, not coding or agents."
+        "zh": "开源可自部署旧款，支持图像与长上下文，仅适合零预算基础文本看图，不适合编码与 Agent。",
+        "en": "Open, self-hostable legacy model with image and long context; zero-budget basic text/vision only, not for coding or agents."
       },
       "aliases": [
         "gemma-3-27b",
@@ -6983,8 +6983,8 @@
         "reasoning"
       ],
       "blurb": {
-        "zh": "当前智力天花板（AA 指数 58），复杂 agent 任务与长链路工作首选；max 档价格高，低 effort 档位性价比会好很多。",
-        "en": "Current intelligence ceiling (AA index 58); first pick for complex agents and long tasks. Max effort is pricey — lower efforts are far better value."
+        "zh": "当前智力天花板（AA 指数 57.6），适合可离线等待的长链路 agent 与批处理；但首字延迟约 573 秒，不适合实时对话，且 max 档价格高。",
+        "en": "Current intelligence ceiling (57.6) for long-running agents and batch work; but ~573s first-token latency rules out real-time use."
       },
       "aliases": [
         "claude-opus-5-5",
@@ -7548,7 +7548,7 @@
         "fast"
       ],
       "blurb": {
-        "zh": "Amazon Nova Micro 低价高速，适合实时对话与批量文本处理；智力 C 档，难解难题。",
+        "zh": "Amazon Nova Micro 低价高速，适合实时对话与批量文本处理；智力 C 档，不擅长难题。",
         "en": "Amazon Nova Micro: ultra-cheap, fast (305 tok/s) for chats and bulk text; C-tier, not for hard problems."
       },
       "aliases": [
@@ -8076,7 +8076,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "MiniMax M1 40k 是可自部署的开源长上下文模型，适合超长文档；智力指数仅10，难解难题。",
+        "zh": "MiniMax M1 40k 是可自部署的开源长上下文模型，适合超长文档；智力指数仅10，不擅长难题。",
         "en": "MiniMax M1 40k: open-weights, self-deployable, ultra-long context; intelligence index 10—not for hard reasoning."
       },
       "aliases": [
@@ -8262,8 +8262,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "开源可自部署，支持视觉与262k长上下文，六维齐全但整体偏弱（智力28.2），适合轻量多模态任务，不适合难题或复杂Agent。",
-        "en": "Open-weights, self-deployable, vision + 262k context. All-round but weak (intelligence 28.2) — for budget multimodal tasks, not hard reasoning or agents."
+        "zh": "开源可自部署，支持视觉与 262k 长上下文，但整体偏弱（智力 28.2），适合轻量多模态任务。",
+        "en": "Open-weights, self-deployable, vision + 262k context, but weak (28.2)—light multimodal tasks only."
       },
       "aliases": [
         "nex-n2-pro",
@@ -8437,8 +8437,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "S级智力、六维齐全，百万上下文加视觉，适合复杂推理；但首字延迟近50秒，不适合实时场景。",
-        "en": "S-tier reasoning, full skills, 1M context + vision—great for deep analysis; 50s first-token latency rules out real-time use."
+        "zh": "S 级智力、百万上下文加视觉，适合复杂推理；但首字延迟近 50 秒，不适合实时场景。",
+        "en": "S-tier reasoning, 1M context + vision for deep analysis; 50s first-token latency rules out real-time use."
       },
       "aliases": [
         "gpt-6-1-sol-high",
@@ -9267,8 +9267,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "预算有限的编码与长文本之选：编码尚可、1M上下文、成本极低，但首字延迟约97秒、Agent弱，不适合复杂任务。",
-        "en": "Budget pick for coding and long context: decent code, 1M context, dirt-cheap; but ~97s first-token lag and weak agents—skip complex tasks."
+        "zh": "编码强、Agent 不弱（42.1）、1M 上下文、成本极低；真正短板是首字延迟约 97 秒，不适合实时交互。",
+        "en": "Strong coding (71.4) and solid agentic (42.1), 1M context, very cheap; the catch is ~97s first-token latency."
       },
       "aliases": [
         "gpt-5-6-luna",
@@ -9410,8 +9410,8 @@
       },
       "strengths": [],
       "blurb": {
-        "zh": "Upstage轻量闭源模型，智力仅7.9，适合简单问答与日常文本，难解难题，64K上下文。",
-        "en": "Upstage's lightweight closed model, 7.9 intelligence; fine for simple Q&A, not hard problems."
+        "zh": "Upstage 轻量闭源模型，智力仅 7.9，适合简单问答与日常文本，不擅长解难题，64K 上下文。",
+        "en": "Upstage's lightweight closed model: 7.9 intelligence, fine for simple Q&A, not hard problems, 64K context."
       },
       "aliases": [
         "solar-pro-2-preview",
@@ -9801,8 +9801,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "Opus 5.5低耗档：质量A、六维全能，百万上下文+视觉，$0.55/任务；首字6.5秒，不适合实时对话。",
-        "en": "Opus 5.5 Low: A-grade, 6 domains, 1M context + vision, $0.55/task; 6.5s first token, not for real-time chat."
+        "zh": "Opus 5.5 低耗档：质量 A、百万上下文+视觉，$0.55/任务；首字 6.5 秒，不适合实时对话。",
+        "en": "Opus 5.5 Low: A-grade, 1M context + vision, $0.55/task; 6.5s first token, not for real-time chat."
       },
       "aliases": [
         "claude-opus-5-5-low",
@@ -10092,7 +10092,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "开源可自部署，128K 上下文；智力仅 7.3 属轻量档，适合预算有限的本地推理，难解难题。",
+        "zh": "开源可自部署，128K 上下文；智力仅 7.3 属轻量档，适合预算有限的本地推理，不擅长难题。",
         "en": "Open-weights, self-deployable, 128K context; 7.3 intelligence—lightweight, for budget local inference, not hard reasoning."
       },
       "aliases": [
@@ -10232,8 +10232,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "适合需图文输入和256K长上下文的企业用户；六维齐全但智力仅33.9，难啃硬骨头；闭源仅API。",
-        "en": "For enterprises needing vision + 256K context; well-rounded but only 33.9 intelligence—skip hard tasks; closed-weight, API only."
+        "zh": "适合需图文输入和 256K 长上下文的企业用户；但智力仅 33.9，难啃硬骨头；闭源仅 API。",
+        "en": "For enterprises needing vision + 256K context, but only 33.9 intelligence—skip hard tasks; closed-weight, API only."
       },
       "aliases": [
         "jt-4-1-flash-236b-a21b",
@@ -10280,7 +10280,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "小米开源轻量模型，百万上下文、低价；智力C档且慢，适合自部署长文档，难解难题。",
+        "zh": "小米开源轻量模型，百万上下文、低价；智力C档且慢，适合自部署长文档，不擅长难题。",
         "en": "Xiaomi's open-weight 1M-context budget model; C-tier, slow—good for self-hosted long docs, not hard reasoning."
       },
       "aliases": [
@@ -10597,8 +10597,8 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "开源权重可自部署，智力中等偏下，适合预算有限、重数据自主的中等任务。",
-        "en": "Open weights, self-hostable; mid-low intelligence, for budget/data-sensitive moderate tasks."
+        "zh": "开源权重可自部署，但智力指数仅 5.1（C 档底部），只适合简单任务，复杂推理别用。",
+        "en": "Open weights, self-hostable, but low intelligence (5.1); simple tasks only."
       },
       "aliases": [
         "apertus-70b-instruct",
@@ -10674,7 +10674,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "可自部署轻量蒸馏版，价格不足旗舰零头；适合预算有限的推理尝试，难解难题。",
+        "zh": "可自部署轻量蒸馏版，价格不足旗舰零头；适合预算有限的推理尝试，不擅长难题。",
         "en": "Self-hostable distilled R1 at a fraction of flagship cost; good for budget reasoning, not hard problems."
       },
       "aliases": [
@@ -10709,7 +10709,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "Qwen3 0.6B 推理版仅 4.8 智力指数，适合轻量边缘任务，难解难题。",
+        "zh": "Qwen3 0.6B 推理版仅 4.8 智力指数，适合轻量边缘任务，不擅长难题。",
         "en": "Qwen3 0.6B Reasoning: 4.8 intelligence index; for lightweight edge tasks, not hard problems."
       },
       "aliases": [
@@ -11398,8 +11398,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "适合超长上下文与图像输入的专业用户，六维均衡且成本低于旗舰；首字延迟19秒，不适合实时交互。",
-        "en": "For pros needing 1M context and vision at below-flagship cost; 19s first-token latency rules out real-time chat."
+        "zh": "适合超长上下文与图像输入的专业用户，成本低于旗舰（A 档、智力 42.4）；首字延迟 19 秒，不适合实时交互。",
+        "en": "For pro users needing ultra-long context and image input, cheaper than flagship (A-tier, 42.4); 19s first token, not for chat."
       },
       "aliases": [
         "gpt-6-sol-high",
@@ -11725,7 +11725,7 @@
       ],
       "blurb": {
         "zh": "适合预算有限、需处理图文视频的企业；300K上下文+多模态，但智力C档，复杂推理别指望。",
-        "en": "For budget-conscious enterprises needing vision, audio, and 300K context; C-tier intelligence means skip complex reasoning."
+        "en": "For budget-conscious enterprises needing vision and 300K context; C-tier intelligence—skip complex reasoning."
       },
       "aliases": [
         "nova-pro",
@@ -11799,7 +11799,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "Gemini 2.5 Flash 非推理版：智力一般，百万 token 全模态，适合长文档与音视频，难解难题。",
+        "zh": "Gemini 2.5 Flash 非推理版：智力一般，百万 token 全模态，适合长文档与音视频，不擅长难题。",
         "en": "Gemini 2.5 Flash non-reasoning: modest smarts, 1M-token multimodal; good for long docs/media, not hard problems."
       },
       "aliases": [
@@ -12323,8 +12323,8 @@
         "agent"
       ],
       "blurb": {
-        "zh": "Codex 编码特化线：终端/agent 编码任务表现稳定，仍被大量编码工具默认使用。",
-        "en": "Codex coding-specialist line: reliable for terminal/agentic coding; still a default in many coding tools."
+        "zh": "Codex 编码特化线：B 档智力（32.5）、40 万上下文，适合终端/agent 编码任务；非编码场景不必选它。",
+        "en": "Codex coding-specialist line: B-tier (32.5) with 400K context, aimed at terminal/agent coding; skip for non-coding work."
       },
       "aliases": [
         "gpt-5-3-codex",
@@ -12548,7 +12548,7 @@
         "vision"
       ],
       "blurb": {
-        "zh": "OpenAI旧推理模型，质量C、编码39.7，难解难题；$15/$60偏贵，仅适合图文轻量推理。",
+        "zh": "OpenAI旧推理模型，质量C、编码39.7，不擅长难题；$15/$60偏贵，仅适合图文轻量推理。",
         "en": "OpenAI's older reasoning model: tier C, coding 39.7, weak on hard problems; $15/$60 is steep, only for light vision+text tasks."
       },
       "aliases": [
@@ -12977,7 +12977,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "开源可自部署，价格极低、速度尚可，适合预算敏感日常文本；智力 11.1，难解难题。",
+        "zh": "开源可自部署，价格极低、速度尚可，适合预算敏感日常文本；智力 11.1，不擅长难题。",
         "en": "Open-weights, self-deployable, dirt-cheap, decent speed for daily text tasks; 11.1 intelligence, not for hard problems."
       },
       "aliases": [
@@ -13018,7 +13018,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "开源轻量多模态模型，支持图文视频与262K上下文；但推理编码弱，难解难题。",
+        "zh": "开源轻量多模态模型，支持图文视频与262K上下文；但推理编码弱，不擅长难题。",
         "en": "Open-weight multimodal model with vision/video and 262K context; weak at reasoning and coding."
       },
       "aliases": [
@@ -13264,7 +13264,7 @@
       },
       "strengths": [],
       "blurb": {
-        "zh": "Mistral 闭源旧款，C 档智力、32K 上下文，仅适合轻量任务；现价性价比一般，难解难题。",
+        "zh": "Mistral 闭源旧款，C 档智力、32K 上下文，仅适合轻量任务；现价性价比一般，不擅长难题。",
         "en": "Mistral's older closed model: C-tier, 32K context, light tasks only; mediocre value, not for hard problems."
       },
       "aliases": [
@@ -13479,7 +13479,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "Grok 4 智能仅 C 档、首字延迟近 10 秒；适合视觉和长上下文、低推理需求场景，难解难题。",
+        "zh": "Grok 4 智能仅 C 档、首字延迟近 10 秒；适合视觉和长上下文、低推理需求场景，不擅长难题。",
         "en": "Grok 4: C-tier intelligence, ~10s first-token latency; suits vision/long-context, low-reasoning tasks—not hard problems."
       },
       "aliases": [
@@ -13750,8 +13750,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "适合长上下文+视觉的轻量任务，快且便宜，但智力有限，难胜任复杂题。",
-        "en": "For lightweight long-context vision tasks: fast, cheap, but limited intelligence; not for hard problems."
+        "zh": "适合长上下文+视觉的轻量任务，价格便宜；吞吐约 193 tok/s，但首字延迟约 16 秒，智力有限，难胜任复杂题。",
+        "en": "Cheap lightweight long-context vision model; ~193 tok/s throughput but ~16s first token, limited intelligence."
       },
       "aliases": [
         "nova-2-0-lite-reasoning",
@@ -13792,8 +13792,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "谷歌多模态模型，百万token窗口是亮点；但智力C档、编码弱，适合长文档与媒体理解，不擅硬逻辑。",
-        "en": "Google's multimodal model with 1M context; quality tier C, weak coding. Best for long docs/media, not hard logic."
+        "zh": "谷歌多模态模型，百万 token 窗口是亮点；综合智力仅 C 档，但编码指数 46.7 明显高于智力分，适合长文档与轻量编码。",
+        "en": "Google multimodal model with 1M context; C-tier overall, but 46.7 coding index far outpaces its intelligence—long docs and light coding."
       },
       "aliases": [
         "gemini-2-5-pro-03-25",
@@ -14065,7 +14065,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "适合长上下文+图片输入的低难度任务；智力仅14.2，难解难题，但快且便宜。",
+        "zh": "适合长上下文+图片输入的低难度任务；智力仅14.2，不擅长难题，但快且便宜。",
         "en": "For long-context+vision tasks of low difficulty; IQ just 14.2, no hard problems, but fast and cheap."
       },
       "aliases": [
@@ -14198,7 +14198,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "Kimi K2 0905 开源可自部署，256K 长上下文，适合长文档；但智力分低、速度慢，难解难题。",
+        "zh": "Kimi K2 0905 开源可自部署，256K 长上下文，适合长文档；但智力分低、速度慢，不擅长难题。",
         "en": "Kimi K2 0905: open-weights, 256K context, self-hostable for long docs; low intelligence, slow—skip for hard reasoning."
       },
       "aliases": [
@@ -14263,8 +14263,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "开源可自部署，256K上下文+视频输入，适合预算有限的多模态开发者；智力与Agent偏弱、速度慢，难做难题。",
-        "en": "Open-weight, self-deployable, 256K context + video input—good for budget multimodal devs; weak reasoning, slow, not for hard tasks."
+        "zh": "开源可自部署，256K 上下文+视频输入，适合预算有限的多模态开发者；Agent 指数 44.4 在本档居首，但智力偏低、速度慢。",
+        "en": "Open, self-hostable, 256K context + video input for budget multimodal work; agent 44.4 leads its tier, but low intelligence and slow."
       },
       "aliases": [
         "qwen3-8-27b-medium",
@@ -14297,8 +14297,8 @@
       },
       "strengths": [],
       "blurb": {
-        "zh": "轻量推理模型，智力9.2入门档，128K上下文是亮点；适合预算有限的简单任务，难不了。",
-        "en": "Lightweight reasoning model, entry-level 9.2 intelligence; 128K context shines. Budget-friendly for simple tasks only."
+        "zh": "轻量推理模型，智力 9.2 入门档，128K 上下文是亮点；适合预算有限的简单任务，难题搞不定。",
+        "en": "Lightweight reasoning model: 9.2 entry-tier intelligence, 128K context; budget simple tasks only, not hard problems."
       },
       "aliases": [
         "motif-2-12-7b",
@@ -14883,7 +14883,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "70B开源推理模型，128K上下文，可自部署跑长文本；智力C档，难解难题。",
+        "zh": "70B开源推理模型，128K上下文，可自部署跑长文本；智力C档，不擅长难题。",
         "en": "Open 70B reasoning model, 128K context, self-hostable for long text; C-tier smarts, not for hard problems."
       },
       "aliases": [
@@ -15228,7 +15228,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "开源可自部署、百万上下文、输出0.87美元/百万，适合长文档省钱场景；智力C档，难解难题。",
+        "zh": "开源可自部署、百万上下文、输出0.87美元/百万，适合长文档省钱场景；智力C档，不擅长难题。",
         "en": "Open-source, 1M context, $0.87/M output. Good for long docs on a budget; C-tier intelligence, not for hard problems."
       },
       "aliases": [
@@ -15266,7 +15266,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "NVIDIA 12B开源视觉模型，128K上下文，智力7.5，只够轻量图文，难解难题。",
+        "zh": "NVIDIA 12B开源视觉模型，128K上下文，智力7.5，只够轻量图文，不擅长难题。",
         "en": "NVIDIA's open 12B vision model, 128K context, 7.5 intelligence: light tasks only, not hard reasoning."
       },
       "aliases": [
@@ -15498,8 +15498,8 @@
         "vision"
       ],
       "blurb": {
-        "zh": "GPT-6 家族的成本杀手：$0.07/任务、117 tok/s，轻量任务和批量跑数据首选，别指望它做难题。",
-        "en": "The GPT-6 family's cost killer: $0.07/task at 117 tok/s. First pick for bulk and lightweight jobs; not for hard reasoning."
+        "zh": "GPT-6 家族的成本杀手：$0.07/任务、约 124 tok/s，但首字延迟约 93 秒，只适合可排队的离线批处理，不适合交互式调用。",
+        "en": "The GPT-6 family's cost killer: $0.07/task at ~124 tok/s, but ~93s first token—offline batch only, not interactive use."
       },
       "aliases": [
         "gpt-6-luna",
@@ -15897,7 +15897,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "Meta 开源 3B 小模型可自部署，适合轻量端侧；智力指数 5.7，难解难题。",
+        "zh": "Meta 开源 3B 小模型可自部署，适合轻量端侧；智力指数 5.7，不擅长难题。",
         "en": "Meta's open 3B model, self-deployable for light tasks; 5.7 intelligence index, not for hard problems."
       },
       "aliases": [
@@ -16562,8 +16562,8 @@
         "cheap"
       ],
       "blurb": {
-        "zh": "扩散架构 LLM：766 tok/s 的流式体验极佳，智力轻量，适合打字机式交互与草稿生成。",
-        "en": "Diffusion-architecture LLM: 766 tok/s streaming feel, light intelligence — fun for typewriter-style drafting."
+        "zh": "扩散式推理速度快到 720 tok/s，流式体验极佳，适合低延迟交互；智力中档，复杂难题别指望。",
+        "en": "Diffusion-style reasoning at 720 tok/s gives superb streaming, ideal for low-latency chat; mid intelligence, not for hard problems."
       },
       "aliases": [
         "mercury-2-5",
@@ -16783,8 +16783,8 @@
         "chinese"
       ],
       "blurb": {
-        "zh": "DeepSeek 视觉版 Flash：带图像输入、194 tok/s，便宜的图片理解主力。",
-        "en": "Vision-capable DeepSeek Flash: image input at 194 tok/s — a cheap workhorse for image understanding."
+        "zh": "视觉与长上下文兼顾的快速模型：约 202 tok/s、百万上下文，适合图文批处理；智力中档，难题别指望。",
+        "en": "Fast vision+long-context model: ~202 tok/s, 1M context, good for image-text batch work; mid intelligence, skip hard problems."
       },
       "aliases": [
         "deepseek-v4-flash-vision",
@@ -17494,8 +17494,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "Claude 轻量款：232 tok/s 高速输出，A 档智力只要 $0.21/任务，高并发与简单任务的高性价比首选。",
-        "en": "Lightweight Claude: 232 tok/s and $0.21/task at A-tier intelligence. Great value for high-volume, simpler tasks."
+        "zh": "Claude 轻量款：输出 232 tok/s、A 档智力、约 $0.21/任务，价格低；但首字延迟约 258 秒，不适合实时交互，宜离线批处理。",
+        "en": "Lightweight Claude: 232 tok/s at A-tier intelligence (~$0.21/task), cheap; but ~258s first-token latency rules out real-time use."
       },
       "aliases": [
         "claude-haiku-5-5",
@@ -17799,7 +17799,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "开源免费可自部署，256K上下文，适合轻量任务；智力弱、速度慢，难解难题。",
+        "zh": "开源免费可自部署，256K上下文，适合轻量任务；智力弱、速度慢，不擅长难题。",
         "en": "Open-weights, free, self-hostable, 256K context—good for light tasks; weak intelligence, slow, not for hard problems."
       },
       "aliases": [
@@ -18178,7 +18178,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "开源可自部署、200K 上下文，适合预算有限的轻量任务；但 C 档智力、速度慢，难解难题。",
+        "zh": "开源可自部署、200K 上下文，适合预算有限的轻量任务；但 C 档智力、速度慢，不擅长难题。",
         "en": "Open-weight, self-deployable, 200K context; fits budget light tasks, but C-tier smarts and slow—no hard problems."
       },
       "aliases": [
@@ -18384,7 +18384,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "小米开源轻量模型，256K长上下文可自部署；智力偏低，适合长文摘要等轻任务，难解难题。",
+        "zh": "小米开源轻量模型，256K长上下文可自部署；智力偏低，适合长文摘要等轻任务，不擅长难题。",
         "en": "Xiaomi's open, self-deployable lightweight model with 256K context; low intelligence—good for long-doc summaries, not hard reasoning."
       },
       "aliases": [
@@ -19240,8 +19240,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "Google 中端 Flash：158 tok/s 带视觉和音频输入，$1.24/任务，速度智力价格三角均衡的日常款。",
-        "en": "Google's mid-range Flash: 158 tok/s with vision and audio input at $1.24/task. A balanced everyday pick."
+        "zh": "速度与性价比均衡：约 144 tok/s、$1.24/任务，支持视觉音频输入，A 档智力，适合日常多模态与编码。",
+        "en": "Balanced speed and value: ~144 tok/s at $1.24/task, vision+audio input, A-tier—good for everyday multimodal and coding."
       },
       "aliases": [
         "gemini-3-8-flash",
@@ -19708,8 +19708,8 @@
         "agent"
       ],
       "blurb": {
-        "zh": "Qwen3.8 开源权重版（2.4T 总参/A95B 激活）：自托管阵营的旗舰选择，中文 agent 首选开源款。",
-        "en": "Open-weights Qwen3.8 (2.4T total / A95B active): the self-hosting flagship, top open pick for Chinese agent work."
+        "zh": "Qwen3.8 2.4T A95B 编码71.9、B档智力，适合需开源权重的中文代理与编码任务，但3.14秒首字延迟和$2.16每任务成本需权衡。",
+        "en": "Qwen3.8 2.4T A95B: coding 71.9, B-tier, open-weights—suits Chinese agent and coding work, but weigh 3.14s latency and $2.16/task cost."
       },
       "aliases": [
         "qwen3-8-2-4t-a95b",
@@ -19791,7 +19791,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "GPT-5 nano 适合预算紧、需视觉和 40 万上下文的轻量任务；智力仅 12.5，首字延迟 32 秒，难解难题。",
+        "zh": "GPT-5 nano 适合预算紧、需视觉和 40 万上下文的轻量任务；智力仅 12.5，首字延迟 32 秒，不擅长难题。",
         "en": "GPT-5 nano fits budget tasks needing vision and 400K context; 12.5 intelligence, 32s latency—skip hard problems."
       },
       "aliases": [
@@ -19862,8 +19862,8 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "Olmo 3 7B Instruct 智力指数 5.2，中档偏轻量，开源可自部署，适合预算有限、本地跑 6.5 万上下文的用户。",
-        "en": "Olmo 3 7B Instruct: AA intelligence 5.2, mid-light tier; open weights for self-hosting, ideal for budget-limited 65K-context local tasks."
+        "zh": "Olmo 3 7B Instruct 智力指数 5.2，C 档入门水平；开源可自部署，适合预算有限、本地跑 6.5 万上下文的轻量任务。",
+        "en": "Olmo 3 7B Instruct: 5.2 intelligence, C-tier entry level; open weights for budget local tasks with 65K context."
       },
       "aliases": [
         "olmo-3-7b-instruct",
@@ -20339,8 +20339,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "闭源中档模型，百万上下文+视觉，价低旗舰但质量中档，适合长文档图文常规任务，难啃最难题。",
-        "en": "Closed mid-tier model, 1M-token context + vision, below flagship price but mid quality; good for routine long-doc/image-text work, not hardest problems."
+        "zh": "闭源 C 档模型，百万上下文+视觉，每百万 token 输入 $2、输出 $10，价格低于旗舰；适合长文档图文常规任务。",
+        "en": "Closed C-tier model, 1M context + vision, below-flagship pricing ($2/$10 per 1M); for routine long-doc vision work."
       },
       "aliases": [
         "gpt-6-sol-daybreak-blue",
@@ -20379,7 +20379,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "Gemini 1.5 Flash-8B：轻量闭源，智力一般，支持百万token与多模态，适合低成本长文档/音视频，难解难题。",
+        "zh": "Gemini 1.5 Flash-8B：轻量闭源，智力一般，支持百万token与多模态，适合低成本长文档/音视频，不擅长难题。",
         "en": "Gemini 1.5 Flash-8B: lightweight closed model, modest IQ, 1M context, multimodal; for cheap long-doc/AV, not hard reasoning."
       },
       "aliases": [
@@ -20488,8 +20488,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "百万上下文+视觉，适合长文档图片分析；智力24.9、延迟20s+，难解难题实时对话。",
-        "en": "1M context+vision for long docs/images; 24.9 IQ & 20s+ latency, not for hard reasoning/real-time chat."
+        "zh": "百万上下文+视觉，适合长文档与图片分析；智力 24.9、首字延迟 20 秒+，不适合复杂推理或实时对话。",
+        "en": "1M context + vision for long docs and images; 24.9 intelligence and 20s+ first token—not for hard reasoning or chat."
       },
       "aliases": [
         "grok-4-3",
@@ -20683,8 +20683,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "全能六维，百万上下文，擅长复杂推理与长文档；首字延迟超30秒，实时交互慎选。",
-        "en": "All-rounder with 1M context for complex reasoning and long docs; 30s+ first-token latency, avoid for real-time chat."
+        "zh": "能力覆盖面较广（法律/金融/工程等），百万上下文，擅长复杂推理与长文档；首字延迟超 30 秒，实时交互慎选。",
+        "en": "Broad capability coverage (legal/finance/engineering), 1M context, strong reasoning and long docs; 30s+ first token, caution for chat."
       },
       "aliases": [
         "claude-sonnet-5-5-xhigh",
@@ -20933,8 +20933,8 @@
         "cheap"
       ],
       "blurb": {
-        "zh": "Muse Spark 中杯：A 档智力、$1.60/任务、xhigh 档可跑到 287 tok/s，量大的 agent 流水线很划算。",
-        "en": "Muse Spark mid-tier: A intelligence at $1.60/task; the xhigh variant reaches 287 tok/s — great for high-volume agent pipelines."
+        "zh": "Muse Spark 1.3（Max）：A 档智力（48.1）、编码 75.8，$1.60/任务；本档约 128 tok/s，适合量大的 agent 流水线。",
+        "en": "Muse Spark 1.3 (Max): A-tier (48.1), coding 75.8, $1.60/task; ~128 tok/s at this tier suits high-volume agent pipelines."
       },
       "aliases": [
         "muse-spark-1-3",
@@ -21057,8 +21057,8 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "Qwen3.8 Flash 次世代：A 档智力只要 $0.37/任务，中文日常任务性价比极高。",
-        "en": "Qwen3.8 Flash next-gen: A-tier at $0.37/task — outstanding value for everyday Chinese tasks."
+        "zh": "Qwen3.8-Flash-Next 便宜且开源，编码73分尚可，适合预算有限的中文编码与轻量Agent场景。",
+        "en": "Qwen3.8-Flash-Next is cheap and open-weights; 73 coding score suits budget Chinese coding and light agent tasks."
       },
       "aliases": [
         "qwen3-8-flash-next",
@@ -21306,7 +21306,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "LG开源长文本模型，256K上下文是亮点，智力偏低，适合自部署处理文档，难解难题。",
+        "zh": "LG开源长文本模型，256K上下文是亮点，智力偏低，适合自部署处理文档，不擅长难题。",
         "en": "LG's open model with 256K context; good for self-hosted docs, but low intelligence—not for hard problems."
       },
       "aliases": [
@@ -21858,8 +21858,8 @@
         "chinese"
       ],
       "blurb": {
-        "zh": "AWS Nova 2.0 Pro 预览：AWS 生态内集成方便，智力一般，企业已有 AWS 合同顺手用。",
-        "en": "AWS Nova 2.0 Pro preview: easy within AWS; average intelligence — handy when you're already committed to AWS."
+        "zh": "Nova 2.0 Pro 编码分仅20.9、智力C档，响应快且支持中文，适合轻量中文对话与非编码辅助场景。",
+        "en": "Nova 2.0 Pro scores only 20.9 in coding and C-tier intelligence; fast, Chinese-capable—fits light Chinese chat, not coding."
       },
       "aliases": [
         "nova-2-0-pro",
@@ -22562,7 +22562,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "轻量开源多模态模型，适合本地简单图文任务；C档智力，难解难题。",
+        "zh": "轻量开源多模态模型，适合本地简单图文任务；C档智力，不擅长难题。",
         "en": "Lightweight open-weights multimodal model for local simple text-image tasks; C-tier intelligence, not for hard problems."
       },
       "aliases": [
@@ -22649,7 +22649,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "开源可自部署推理模型，智力平平、速度慢，适合预算有限的小团队，难解难题。",
+        "zh": "开源可自部署推理模型，智力平平、速度慢，适合预算有限的小团队，不擅长难题。",
         "en": "Open-weights self-hostable reasoning model; modest intelligence, slow, for budget teams, not hard problems."
       },
       "aliases": [
@@ -22842,7 +22842,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "开源24B小模型，32K上下文；智力C档，适合本地轻量任务和微调，难解不了。",
+        "zh": "开源24B小模型，32K上下文；智力C档，适合本地轻量任务和微调，解不了难题。",
         "en": "Open 24B self-hostable model, 32K context; tier C—good for local light tasks and fine-tuning, not hard problems."
       },
       "aliases": [
@@ -22991,8 +22991,8 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "Llama 3 70B 可自部署、低价，适合预算有限的短上下文常规对话；智力中档，难做难题。",
-        "en": "Llama 3 70B: self-hostable, cheap, good for budget short-context chat; mid-tier smarts, not for hard problems."
+        "zh": "Llama 3 70B 可自部署、低价，适合预算有限的 8K 短上下文常规对话；智力偏低（C 档，5.5），难做难题。",
+        "en": "Llama 3 70B: self-hostable and cheap for budget 8K short-context chat; low intelligence (C-tier, 5.5), not for hard problems."
       },
       "aliases": [
         "llama-3-instruct-70b",
@@ -23237,8 +23237,8 @@
         "vision"
       ],
       "blurb": {
-        "zh": "老牌中档模型，带视觉输入，适合日常文本与图片理解；智力分一般，别指望它啃硬编码题。",
-        "en": "Older mid-tier Claude with vision; fine for everyday text+image tasks, but don't expect strong coding or hard reasoning."
+        "zh": "老款轻量模型，带视觉输入，适合日常文本与图片理解；智力分一般，别指望它啃硬编码题。",
+        "en": "Legacy lightweight model with vision input for everyday text and image work; middling intelligence, not for hard coding."
       },
       "aliases": [
         "claude-35-sonnet-june-24",
@@ -23524,7 +23524,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "百度开源300B MoE，128K上下文可自部署；智力7.5属C档，适合企业长文本，难解难题。",
+        "zh": "百度开源300B MoE，128K上下文可自部署；智力7.5属C档，适合企业长文本，不擅长难题。",
         "en": "Baidu's open 300B MoE, 128K context, self-deployable; C-tier (7.5) intelligence suits enterprise long-text, not hard reasoning."
       },
       "aliases": [
@@ -23664,8 +23664,8 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "Molmo 7B-D 开源可自部署，智力指数 5.6 中档，适合轻量图文任务。",
-        "en": "Molmo 7B-D is open, self-hostable, intelligence 5.6 mid-tier, for light image-text tasks."
+        "zh": "Molmo 7B-D 开源可自部署，智力偏低（指数 5.6，C 档），仅适合轻量图文任务。",
+        "en": "Molmo 7B-D is open and self-hostable but low intelligence (5.6, tier C)—light image-text tasks only."
       },
       "aliases": [
         "molmo-7b-d",
@@ -23720,8 +23720,8 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "开源可自部署轻量推理模型，极便宜、六维齐全，适合预算有限的日常问答；编码和Agent弱、速度慢，别做难题。",
-        "en": "Open-weights, self-deployable lightweight reasoning model; dirt-cheap, broad coverage, fine for budget Q&A, but weak at coding/agents—skip hard problems."
+        "zh": "开源可自部署轻量推理模型，极便宜，适合预算有限的日常问答；编码和 Agent 弱、速度慢，别做难题。",
+        "en": "Open, self-deployable lightweight reasoning model; dirt-cheap for budget Q&A, but weak coding/agents and slow."
       },
       "aliases": [
         "qwen3-32b-instruct-reasoning",
@@ -23788,8 +23788,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "适合需要多模态输入和长上下文的开源场景，编码尚可、Agent偏弱、速度慢，别指望它处理复杂任务。",
-        "en": "Open-weights model for multimodal and long-context tasks; decent coding but weak agent skills and slow speed."
+        "zh": "开源多模态长上下文模型（256K，支持图文视频、可自部署）；编码 68.1、Agent 45.8 均属本档中上，B 档智力；短板是速度慢。",
+        "en": "Open multimodal long-context model (256K, text/image/video); strong coding (68.1) and agent (45.8), B-tier; slow."
       },
       "aliases": [
         "qwen3-8-27b",
@@ -23909,7 +23909,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "Google开源多模态小模型，支持文图音视频、可自部署；智力仅7.8，适合轻量与隐私场景，难解难题。",
+        "zh": "Google开源多模态小模型，支持文图音视频、可自部署；智力仅7.8，适合轻量与隐私场景，不擅长难题。",
         "en": "Google's open multimodal model handles text/image/audio/video, self-deployable; intelligence only 7.8—light tasks, not hard reasoning."
       },
       "aliases": [
@@ -24134,7 +24134,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "NVIDIA 4B 开源推理小模型，128K 上下文，智力分偏低，适合自部署轻量任务，难解难题。",
+        "zh": "NVIDIA 4B 开源推理小模型，128K 上下文，智力分偏低，适合自部署轻量任务，不擅长难题。",
         "en": "NVIDIA's 4B open reasoning model, 128K context; low intelligence, fit for self-hosted light tasks, not hard problems."
       },
       "aliases": [
@@ -24476,7 +24476,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "谷歌闭源旗舰Gemini 3 Pro Preview（Low），智力22.3，专攻长文档与音视频，难解难题。",
+        "zh": "谷歌闭源旗舰Gemini 3 Pro Preview（Low），智力22.3，专攻长文档与音视频，不擅长难题。",
         "en": "Google's closed flagship Gemini 3 Pro (Low): 22.3 reasoning, 1M context for long docs/AV, not for hard problems."
       },
       "aliases": [
@@ -24627,7 +24627,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "开源可自部署、256K长上下文是亮点，但智力C档偏弱；适合预算有限的长文本团队，难解难题。",
+        "zh": "开源可自部署、256K长上下文是亮点，但智力C档偏弱；适合预算有限的长文本团队，不擅长难题。",
         "en": "Open weights, 256K context, but C-tier intelligence; for budget long-doc teams, not hard reasoning."
       },
       "aliases": [
@@ -24709,7 +24709,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "开源可自部署轻量之选，128K上下文，价格极低；但慢且能力一般，难解难题。",
+        "zh": "开源可自部署轻量之选，128K上下文，价格极低；但慢且能力一般，不擅长难题。",
         "en": "Open-weights, self-deployable, 128K context at very low cost; but slow and modest—skip hard tasks."
       },
       "aliases": [
@@ -25377,8 +25377,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "速度怪兽：1061 tok/s + 免费/近零成本 + B 档智力，批量流水线与实时交互的神器。",
-        "en": "Speed monster: 1061 tok/s at ~$0/task with B-tier intelligence — a monster for batch pipelines and realtime interaction."
+        "zh": "速度怪物：约 1109 tok/s、百万上下文，Agent 40.0，适合高吞吐批量任务；智力 A 档但难题仍需更强模型。",
+        "en": "Speed monster: ~1109 tok/s, 1M context, agent 40.0—great for high-throughput batch work; A-tier but still not a hard-problem solver."
       },
       "aliases": [
         "k2-horizon-375b-a23b",
@@ -25502,8 +25502,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "上一代 Gemini Pro 预览，多数场景已被 3.8/4 Argon 取代，除非价格特别便宜否则不必新上。",
-        "en": "Previous-gen Pro preview, mostly superseded by 3.8/4 Argon; skip unless notably cheaper."
+        "zh": "Gemini 3.1 Pro Preview 首字延迟20.8秒、成本偏高，适合需要百万上下文与视觉能力、且不追求低延迟的长文档处理场景。",
+        "en": "Gemini 3.1 Pro Preview: 20.8s latency, pricey; suited to long-context, vision tasks where low latency is not a priority."
       },
       "aliases": [
         "gemini-3-1-pro-preview",
@@ -25537,7 +25537,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "阿里开源可自部署推理模型，235B参数但智力仅9.5属C档，适合预算有限的本地简单任务，难解难题。",
+        "zh": "阿里开源可自部署推理模型，235B参数但智力仅9.5属C档，适合预算有限的本地简单任务，不擅长难题。",
         "en": "Alibaba's open 235B reasoning model, self-deployable but C-tier (9.5 score); for budget local simple tasks, not hard problems."
       },
       "aliases": [
@@ -25664,7 +25664,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "谷歌轻量多模态模型，支持文本/图像/音频/视频与百万级上下文；智力一般，适合日常任务，难解难题。",
+        "zh": "谷歌轻量多模态模型，支持文本/图像/音频/视频与百万级上下文；智力一般，适合日常任务，不擅长难题。",
         "en": "Google's lightweight multimodal model: text/image/audio/video, 1M context; modest intelligence, fine for daily tasks, not hard reasoning."
       },
       "aliases": [
@@ -25728,8 +25728,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "上一代 GPT-5.6 Terra：智力 A 档但价格已降一截，max 档 148 tok/s 也不慢，过渡期或预算敏感场景仍在役。",
-        "en": "Previous-gen GPT-5.6 Terra: A-tier at a reduced price and 148 tok/s at max. Still a solid pick for budget-sensitive workloads."
+        "zh": "上一代 GPT-5.6 Terra：智力 A 档、价格已降，输出约 135 tok/s；但首字延迟约 132 秒，只适合可离线等待的批处理。",
+        "en": "Previous-gen GPT-5.6 Terra: A-tier at a reduced price, ~135 tok/s; but ~132s first token—batch work that can wait only."
       },
       "aliases": [
         "gpt-5-6-terra",
@@ -26023,7 +26023,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "GPT-6 Luna：低价轻量款，百万上下文+视觉，智力仅21.5，只适简单图文，难解难题。",
+        "zh": "GPT-6 Luna：低价轻量款，百万上下文+视觉，智力仅21.5，只适简单图文，不擅长难题。",
         "en": "GPT-6 Luna: budget lightweight, 1M context + vision, near-zero cost, 21.5 intelligence—simple tasks only."
       },
       "aliases": [
@@ -26271,7 +26271,7 @@
         "vision"
       ],
       "blurb": {
-        "zh": "轻量快速入门款，89 tok/s、支持图片输入，适合日常问答和看图；智力偏低，难解难题。",
+        "zh": "轻量快速入门款，89 tok/s、支持图片输入，适合日常问答和看图；智力偏低，不擅长难题。",
         "en": "Lightweight fast tier: 89 tok/s, vision input. Good for daily chat and images, weak at hard reasoning."
       },
       "aliases": [
@@ -26906,7 +26906,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "开源轻量模型，143 tok/s、256K上下文、近零成本；适合日常问答与长文档，智力偏低难解难题。",
+        "zh": "开源轻量模型，143 tok/s、256K上下文、近零成本；适合日常问答与长文档，智力偏低不擅长难题。",
         "en": "Open lightweight model: 143 tok/s, 256K context, near-zero cost; good for daily chat and long docs, too weak for hard problems."
       },
       "aliases": [
@@ -26953,7 +26953,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "开源可自部署，129 tok/s 快且极便宜，适合日常轻任务；智力仅C档，难解难题。",
+        "zh": "开源可自部署，129 tok/s 快且极便宜，适合日常轻任务；智力仅C档，不擅长难题。",
         "en": "Open-weights, self-deployable, 129 tok/s, dirt-cheap; good for daily tasks, but C-tier smarts—not for hard problems."
       },
       "aliases": [
@@ -26989,7 +26989,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "开源32B思考模型，65K上下文，智力C档难解难题，适合预算有限的本地轻量推理。",
+        "zh": "开源32B思考模型，65K上下文，智力C档不擅长难题，适合预算有限的本地轻量推理。",
         "en": "Open-weights 32B reasoning model, 65K context; C-tier intelligence, best for budget local setups."
       },
       "aliases": [
@@ -27655,8 +27655,8 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "智谱 GLM-5.3 旗舰：1M 上下文、95 tok/s，中文 agent/编码场景第一梯队，max 档价格中档。",
-        "en": "Zhipu GLM-5.3 flagship: 1M context at 95 tok/s, first-tier for Chinese agent/coding work at mid price."
+        "zh": "GLM-5.3 旗舰：编码 74.8、Agent 53.1、开源可自部署，百万上下文；但速度约 86 tok/s 偏慢、max 档价格偏高。",
+        "en": "GLM-5.3 flagship: coding 74.8, agent 53.1, open weights and 1M context; but ~86 tok/s is slow and premium-priced at max."
       },
       "aliases": [
         "glm-5-3",
@@ -27782,7 +27782,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "开源可自部署的32B推理模型，智力9.5属轻量档；适合本地实验，难解难题。",
+        "zh": "开源可自部署的32B推理模型，智力9.5属轻量档；适合本地实验，不擅长难题。",
         "en": "Open-weight self-hostable 32B reasoning model; 9.5 intelligence is lightweight—fine for local tests, not hard problems."
       },
       "aliases": [
@@ -27855,7 +27855,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "闭源非推理，智力一般；优势是100万上下文和看图，适合长文档摘要问答，难解难题。",
+        "zh": "闭源非推理，智力一般；优势是100万上下文和看图，适合长文档摘要问答，不擅长难题。",
         "en": "Closed non-reasoning model, modest smarts; 1M context + vision, good for long-doc summary/Q&A, not hard problems."
       },
       "aliases": [
@@ -28082,7 +28082,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "开源可自部署110B旧款，32K上下文；智力5.7偏低，适合本地实验轻任务，难解难题。",
+        "zh": "开源可自部署110B旧款，32K上下文；智力5.7偏低，适合本地实验轻任务，不擅长难题。",
         "en": "Self-hostable open 110B, 32K context; dated 5.7 intelligence—OK for local experiments, not hard problems."
       },
       "aliases": [
@@ -28131,7 +28131,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "开源可自部署视觉模型，输入$0.3/M便宜，但智力C档、首字4秒多，适合预算有限的图文理解，难解难题。",
+        "zh": "开源可自部署视觉模型，输入$0.3/M便宜，但智力C档、首字4秒多，适合预算有限的图文理解，不擅长难题。",
         "en": "Open-weights vision model, self-hostable, $0.3/M input. C-tier intelligence, 4s+ first token. For budget image-text tasks, not hard reasoning."
       },
       "aliases": [
@@ -28230,8 +28230,8 @@
         "realtime"
       ],
       "blurb": {
-        "zh": "Google 新旗舰（Argon）：智力重回第一梯队，多模态输入（文/图/音）与 1M 上下文是强项，生态内工具链最全。",
-        "en": "Google's new flagship (Argon): back in the first tier, with multimodal input (text/image/audio) and 1M context. Richest ecosystem."
+        "zh": "Google 新旗舰（Argon）：智力重回第一梯队，图文多模态输入与 1M 上下文是强项，生态内工具链最全。",
+        "en": "Google's new flagship (Argon): back in the first tier, with image input and 1M context. Richest ecosystem."
       },
       "aliases": [
         "gemini-4-argon",
@@ -28375,8 +28375,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "适合预算有限、需长上下文和图片输入的轻量任务，$0.33/任务；智力C档，难解不了。",
-        "en": "Budget pick for long-context vision tasks at $0.33/task; C-tier smarts, not for hard problems."
+        "zh": "适合预算有限、需长上下文和图片输入的轻量任务，$0.33/任务；智力 C 档，不适合难题。",
+        "en": "Budget long-context vision pick at $0.33/task; C-tier intelligence, not for hard problems."
       },
       "aliases": [
         "gpt-6-sol-non-reasoning",
@@ -28529,8 +28529,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "开源可自部署、百万上下文、六维齐全，但智力仅20.4属C档，难解难题；适合预算有限需长文档的团队。",
-        "en": "Open-weights, self-deployable, 1M context, broad coverage, but C-tier intelligence (20.4)—no hard problems; for budget teams needing long docs."
+        "zh": "开源可自部署、百万上下文，但智力仅 20.4 属 C 档，不擅长难题；适合预算有限需长文档的团队。",
+        "en": "Open-weights, self-deployable, 1M context, but C-tier (20.4)—no hard problems; for budget teams needing long docs."
       },
       "aliases": [
         "deepseek-v4-pro-non-reasoning",
@@ -28592,8 +28592,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "适合预算紧、需长上下文和看图的轻量任务，快且便宜；但智力仅20.7，别用于复杂推理或Agent。",
-        "en": "Good for budget, lightweight tasks needing long context and vision; fast and cheap, but intelligence score is only 20.7—avoid complex reasoning or agents."
+        "zh": "适合预算紧、需长上下文和看图的轻量任务，便宜且吞吐高（约 166 tok/s），但首字延迟约 56 秒；智力仅 20.7，别用于难题。",
+        "en": "Budget long-context vision pick: cheap at ~166 tok/s, but ~56s first token; only 20.7 intelligence—not for hard reasoning."
       },
       "aliases": [
         "gpt-5-4-nano",
@@ -28658,8 +28658,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "编码强、百万上下文，适合写代码和日常Agent；但首字延迟19秒、Agent弱，难胜任复杂推理。",
-        "en": "Strong coder with 1M context, good for coding and daily agents; but 19s first-token latency and weak agent skills—skip for hard reasoning."
+        "zh": "编码 76.5、agentic 51.5（前 8%），百万上下文，适合写代码与日常 Agent；短板是首字延迟 19 秒。",
+        "en": "Coder at 76.5 with agentic 51.5 (top 8%) and 1M context, good for coding and daily agents; but 19s first token."
       },
       "aliases": [
         "muse-spark-1-3-xhigh",
@@ -28934,8 +28934,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "Grok 4.6 编码 75.9 分，适合代码与长文档；首字延迟 46 秒、Agent 52.5 分，不宜实时交互与自动化。",
-        "en": "Grok 4.6: strong coding (75.9) and long docs, but 46s latency and weak agent score (52.5)—not for real-time or autonomous tasks."
+        "zh": "编码强（75.9）、Agent 分 52.5 属第一梯队、长文档能力强；但首字 46 秒，不适合实时对话，适合后台自动化。",
+        "en": "Strong coding (75.9) and top-tier agent score (52.5) for long docs; the 46s first-token lag rules out chat but suits background automation."
       },
       "aliases": [
         "grok-4-6-xhigh",
@@ -29597,8 +29597,8 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "本批性价比之王：A 档智力（45）+ $0.26/任务 + 230 tok/s，预算敏感又不想降智的默认选择。",
-        "en": "Best value in this batch: A-tier (45) at $0.26/task and 230 tok/s — the default when budget matters but you refuse to lose intelligence."
+        "zh": "速度快的低价推理模型，适合中文长上下文任务的成本敏感场景。",
+        "en": "A fast, low-cost reasoning model for cost-sensitive Chinese long-context tasks."
       },
       "aliases": [
         "deepseek-v4-1-flash",
@@ -30049,8 +30049,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "S级旗舰，百万上下文、六维全能，适合复杂推理与长文档；首字延迟113秒、成本高，不宜实时对话。",
-        "en": "S-tier flagship: 1M context, six-domain skills, great for deep reasoning and long docs; 113s first-token latency and premium cost rule out real-time chat."
+        "zh": "S 级旗舰，百万上下文、推理强，适合复杂推理与长文档；首字延迟 113 秒、成本高，不宜实时对话。",
+        "en": "S-tier flagship with 1M context and strong reasoning; 113s first token and premium cost rule out chat."
       },
       "aliases": [
         "claude-opus-5-5-xhigh",
@@ -30197,7 +30197,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "开源可自部署，输入价极低；适合批量简单任务，智力分偏低难解难题。",
+        "zh": "开源可自部署，输入价极低；适合批量简单任务，智力分偏低不擅长难题。",
         "en": "Open-weights, self-deployable, very cheap input; good for bulk simple tasks, low intelligence score."
       },
       "aliases": [
@@ -30269,8 +30269,8 @@
       },
       "strengths": [],
       "blurb": {
-        "zh": "韩电信闭源中档模型，128K 上下文，质量档 C，适合日常长文档。",
-        "en": "Korea Telecom closed mid-tier model, 128K context, quality tier C, good for everyday long documents."
+        "zh": "韩电信闭源模型，质量档 C（轻量档），适合本地化韩语常规任务；能力有限，不适合复杂推理。",
+        "en": "Closed Korean telco model, quality tier C (lightweight); fits routine Korean-language tasks, not complex reasoning."
       },
       "aliases": [
         "midm-250-pro-rsnsft",
@@ -30420,7 +30420,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "LFM2.5-2.6B：开源轻量，可自部署，128K上下文，适合本地隐私场景；智力编码弱，难解难题。",
+        "zh": "LFM2.5-2.6B：开源轻量，可自部署，128K上下文，适合本地隐私场景；智力编码弱，不擅长难题。",
         "en": "LFM2.5-2.6B: open-weights, self-hostable, 128K ctx—good for private on-device tasks; weak reasoning, skip hard problems."
       },
       "aliases": [
@@ -30455,7 +30455,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "NVIDIA开源49B推理模型，支持自部署和128K上下文，但智力指数9偏低，适合预算有限的轻量实验，难解难题。",
+        "zh": "NVIDIA开源49B推理模型，支持自部署和128K上下文，但智力指数9偏低，适合预算有限的轻量实验，不擅长难题。",
         "en": "NVIDIA's open 49B reasoning model: self-deployable, 128K context, but low intelligence (AA 9)—fine for budget experiments, not hard problems."
       },
       "aliases": [
@@ -30491,7 +30491,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "Liquid AI 8B 开源模型，可自部署、32K 上下文；智力 C 档，适合轻量任务，难解难题。",
+        "zh": "Liquid AI 8B 开源模型，可自部署、32K 上下文；智力 C 档，适合轻量任务，不擅长难题。",
         "en": "Liquid AI's open 8B model, self-hostable, 32K context; tier C—light tasks only, not hard reasoning."
       },
       "aliases": [
@@ -31128,8 +31128,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "OpenAI中档闭源，百万上下文全模态，编码76.7但首字4.66秒慢，宜长文档多模态，不宜实时Agent。",
-        "en": "OpenAI mid-tier closed model: 1M context, multimodal, coding 76.7 but slow (4.7s TTFT)—for long docs, not real-time agents."
+        "zh": "OpenAI 中档闭源，百万上下文、支持图片输入，编码 76.7 但首字约 4.7 秒，宜长文档图文任务，不宜实时 Agent。",
+        "en": "OpenAI mid-tier closed model: 1M context, image input, coding 76.7 but 4.7s TTFT—long docs and vision, not real-time agents."
       },
       "aliases": [
         "gpt-6-astra-medium",
@@ -31465,7 +31465,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "Google全能中端：百万上下文全模态输入，编码尚可，适合长文档，难解难题。",
+        "zh": "Google全能中端：百万上下文全模态输入，编码尚可，适合长文档，不擅长难题。",
         "en": "Google's mid-tier all-rounder: 1M context, multimodal input, decent coding; for long docs, not hard reasoning."
       },
       "aliases": [
@@ -31719,7 +31719,7 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "Qwen3 14B 非推理版：开源可自部署、极廉价、速度尚可，但智力仅 C 档，只适轻聊与简单任务，难解难题。",
+        "zh": "Qwen3 14B 非推理版：开源可自部署、极廉价、速度尚可，但智力仅 C 档，只适轻聊与简单任务，不擅长难题。",
         "en": "Qwen3 14B non-reasoning: open-weights, self-hostable, very cheap, decent speed—but C-tier smarts; light chat only, not hard problems."
       },
       "aliases": [
@@ -32250,8 +32250,8 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "S级智力+百万上下文，六维全能，专攻复杂推理与长文档；首字延迟34秒、单任务$1.82，忌高频轻任务。",
-        "en": "S-tier reasoning, 1M context, six-domain skills for complex docs; 34s latency and $1.82/task, unfit for high-frequency light tasks."
+        "zh": "S 级智力+百万上下文+视觉，擅长复杂推理与长文档；首字延迟 34 秒、单任务 $1.82，忌高频轻任务。",
+        "en": "S-tier reasoning with 1M context and vision; 34s first token and $1.82/task—avoid high-frequency light work."
       },
       "aliases": [
         "claude-opus-5-5-high",
@@ -32542,7 +32542,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "4B开源多模态模型，256K长上下文是亮点；智力一般，适合自部署轻量图文任务，难解难题。",
+        "zh": "4B开源多模态模型，256K长上下文是亮点；智力一般，适合自部署轻量图文任务，不擅长难题。",
         "en": "4B open-weight vision model; standout 256K context, modest smarts—good for self-hosted light image-text tasks, not hard reasoning."
       },
       "aliases": [
@@ -33156,8 +33156,8 @@
         "open-weights"
       ],
       "blurb": {
-        "zh": "LFM2 24B A2B 开源可自部署，智力指数 5.9 属 C 档，适合预算有限的中等难度场景。",
-        "en": "LFM2 24B A2B: open weights, self-hostable; AA intelligence index 5.9 (tier C), suited to budget mid-difficulty deployments."
+        "zh": "LFM2 24B A2B 开源可自部署，智力指数 5.9 属 C 档，仅适合预算有限的最简单任务（分类、抽取、模板化问答）。",
+        "en": "LFM2 24B A2B: open weights, self-hostable; 5.9 intelligence (tier C) means only the simplest budget tasks."
       },
       "aliases": [
         "lfm2-24b-a2b",
@@ -33543,7 +33543,7 @@
         "long-context"
       ],
       "blurb": {
-        "zh": "开源可自部署的百万上下文轻量模型：速度快、每任务$0.17，适合预算有限的编码与日常Agent；智力34.3偏低，难解难题。",
+        "zh": "开源可自部署的百万上下文轻量模型：速度快、每任务$0.17，适合预算有限的编码与日常Agent；智力34.3偏低，不擅长难题。",
         "en": "Open-weights, 1M-context lightweight: fast, $0.17/task, fits budget coding and everyday agents; 34.3 intelligence, not for hard problems."
       },
       "aliases": [
@@ -33657,8 +33657,8 @@
         "agent"
       ],
       "blurb": {
-        "zh": "Meta 新一代 Muse 主力：S 档智力 + 176 tok/s，1.05M 上下文，第一梯队里速度占优的选择。",
-        "en": "Meta's new Muse mainline: S-tier intelligence at 176 tok/s with 1.05M context — the fast pick among first-tier models."
+        "zh": "Meta 旗舰多模态：S 档质量 + 百万上下文，适合复杂推理与音视频；首字延迟 34 秒、成本高，不宜实时交互。",
+        "en": "Meta flagship multimodal: S-tier quality, 1M context for heavy reasoning and AV; 34s first token and high cost rule out chat."
       },
       "aliases": [
         "muse-wonder",
