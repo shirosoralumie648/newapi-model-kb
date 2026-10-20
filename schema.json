@@ -77,7 +77,7 @@
     },
     "price": {
       "type": "object",
-      "required": ["tier", "as_of"],
+      "required": ["as_of"],
       "properties": {
         "tier": { "$ref": "#/$defs/priceTier" },
         "aa_cost_per_task_usd": { "type": "number" },

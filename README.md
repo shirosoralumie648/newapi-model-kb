@@ -40,17 +40,18 @@ https://cdn.jsdelivr.net/gh/shirosoralumie648/newapi-model-kb@main/models.json
 
 `capabilities` 存 AA 的六个**职业能力指数**（免费档即可拉取）：财务会计 / 战略运营 / 法律 / 医疗健康 / 工程 / 经济。
 
-- 取值为 AA 原始值（当前量级约 0~30，随版本演进，**前端不要写死上限**）
-- AA 约定：模型缺任一依赖评估时该维为 `null`（未测 ≠ 零分）
+- 取值为 AA 原始值（当前量级约 0~65，随版本演进，**前端不要写死上限**）
+- AA 约定：模型缺任一依赖评估时该维为 `null`（未测 ≠ 零分）；医疗健康维覆盖模型较少属正常
 - 前端雷达图建议按数据集内各维最大值**相对归一化**；任一维缺失的模型不画雷达，显示「数据不全」
 - 这六个指数与智力指数**分开版本化**，各条目用 `capabilities.as_of` 记录快照月份
-- 同批新增：`quality.aa_coding_index` / `aa_agentic_index`（编码分、Agent 分）、`speed.median_ttft_seconds`（首字延迟）、`price` 的缓存命中/写入与每百万 token 参考价
+- 同批新增：`quality.aa_coding_index` / `aa_agentic_index`（编码分、Agent 分，**仅 AA Data API 提供，公开页面无此字段，当前未填**）、`speed.median_ttft_seconds`（首 chunk 延迟，推理模型含思考时间，与 AA 榜单口径一致）、`price` 的缓存命中/写入与每百万 token 参考价
 
 ## 维护流程
 
 1. **半自动草稿**：`scripts/fetch-aa-draft.py` 用你自己的 AA API key（免费档 100 次/天足够）拉取最新榜单，生成候选条目草稿。
-2. **人工审核**：核对模型名、别名映射、档位、点评措辞；**点评必须人工改写**，不直接照搬机器文案。
-3. **提交**：更新顶层 `updated` 与各条目 `as_of`，PR 合并后即全网生效。
+2. **能力数据**：`scripts/fetch-aa-capabilities.py` 无需 key，从 AA 公开页面抓取六维能力、TTFT 与每百万 token 价格，输出 `/tmp/aa-capabilities-draft.json`（只补不覆盖已有字段）。
+3. **人工审核**：核对模型名、别名映射、档位、点评措辞；**点评必须人工改写**，不直接照搬机器文案。
+4. **提交**：更新顶层 `updated` 与各条目 `as_of`，PR 合并后即全网生效。
 
 ## 归属与合规
 
